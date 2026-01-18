@@ -11,3 +11,7 @@ Present your work and provide feedback on the training.
 
 !!! success
     Congratulations! You have built a complete Carcassonne game in Kotlin Multiplatform.
+
+---
+
+[Previous: Day 4](day4/index.md)

@@ -14,3 +14,7 @@ Program a parser in Kotlin that reads the tiles into an internal immutable data 
 
 !!! tip
     Check in your solution to the repository so that the trainer can review it.
+
+---
+
+[Next: Day 2](day2/index.md)

@@ -11,3 +11,7 @@ Try to create a game board where tiles can be placed and rotated according to th
 
 !!! note
     This is a complex step; use the provided codebase as a guide.
+
+---
+
+[Previous: Day 2](day2/index.md) | [Next: Day 4](day4/index.md)

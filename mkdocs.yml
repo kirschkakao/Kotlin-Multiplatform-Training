@@ -26,8 +26,13 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - 'Day 1: Basics and Tile Parser': day1.md
-  - 'Day 2: Navigation and UI Basics': day2.md
-  - 'Day 3: Grid and Game Board': day3.md
-  - 'Day 4: Followers and Scoring': day4.md
-  - 'Day 5: Refinement and Presentation': day5.md
+  - 'Day 1: Basics and Tile Parser':
+    - Overview: day1/index.md
+  - 'Day 2: Navigation and UI Basics':
+    - Overview: day2/index.md
+  - 'Day 3: Grid and Game Board':
+    - Overview: day3/index.md
+  - 'Day 4: Followers and Scoring':
+    - Overview: day4/index.md
+  - 'Day 5: Refinement and Presentation':
+    - Overview: day5/index.md

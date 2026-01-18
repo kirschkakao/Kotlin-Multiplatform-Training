@@ -11,3 +11,7 @@ Program the placement of followers and the scoring. This is the hardest part, es
 
 !!! warning
     Take the whole day for this; there are support materials.
+
+---
+
+[Previous: Day 3](day3/index.md) | [Next: Day 5](day5/index.md)
