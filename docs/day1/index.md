@@ -1,20 +1,35 @@
-# Day 1: Basics and Tile Parser
+# Day 1: Setup, Kotlin Basics and Tile Parser
+
+[Task 1: Tool Installation and Setup](task1.md)
 
 ### Introduction to Kotlin
-Kotlin is a modern programming language that is interoperable with Java and optimized for multiplatform development. You will learn the basics: variables, functions, classes, data classes, and null safety.
+[Kotlin](https://kotlinlang.org/) is a modern, concise, and safe programming language developed by JetBrains. It runs on the Java Virtual Machine (JVM), making it fully interoperable with Java, and is designed for better productivity and fewer errors. Kotlin is officially supported for Android development and is increasingly used for server-side, web, and multiplatform projects.
 
-### Tool Installation
-Install IntelliJ IDEA or Android Studio, the Kotlin Multiplatform plugin, and the required SDKs for desktop (Windows).
+#### Why Kotlin?
+- **Concise Syntax**: Less boilerplate code compared to Java – e.g., no semicolons needed, smart type inference.
+- **Null Safety**: Built-in null checks prevent common runtime errors like NullPointerExceptions.
+- **Interoperability**: Seamlessly works with existing Java code and libraries.
+- **Modern Features**: Supports functional programming, coroutines for asynchronous code, and more.
 
-### Checking Out the Starting Point
-Check out the start repository: An empty KMP app for Windows that displays the Carcassonne logo and already contains assets (tile graphics).
-
-### Task: Program the Tile Parser
-Program a parser in Kotlin that reads the tiles into an internal immutable data structure. Link them with metadata: what is visible on the tile, connection points, etc. Use the Carcassonne manual as a reference.
+#### Kotlin Basics You'll Learn Today
+- **Variables and Types**: Declare variables with `val` (immutable) or `var` (mutable). Kotlin infers types automatically: `val name = "Carcassonne"` (String).
+- **Functions**: Define reusable code blocks. Example: `fun greet(name: String): String = "Hello, $name!"`
+- **Classes and Data Classes**: Create objects. Data classes are perfect for holding data: `data class Tile(val id: Int, val name: String)`.
+- **Null Safety**: Use `?` for nullable types and safe calls (`?.`) or Elvis operator (`?:`) to handle nulls gracefully.
 
 !!! tip
-    Check in your solution to the repository so that the trainer can review it.
+    Practice these basics in the IDE. Kotlin's official documentation has interactive examples to try out.
+
+### Introduction to Kotlin Multiplatform (KMP)
+[Kotlin Multiplatform](https://kotlinlang.org/multiplatform/) (KMP) is a technology that allows you to write code once and run it on multiple platforms, such as Android, iOS, desktop (Windows, macOS, Linux), and web. It shares business logic while keeping platform-specific UI and APIs separate.
+
+#### Key Concepts
+- **Shared Code**: Write common logic (e.g., data models, networking) in Kotlin, compiled to platform-specific binaries.
+- **expect/actual**: Use `expect` declarations in shared code for platform-agnostic interfaces, and `actual` implementations for each platform. Example: `expect fun getPlatformName(): String` in common code, `actual fun getPlatformName() = "Windows"` in desktop code.
+- **Why KMP?**: Reduces code duplication, speeds up development for cross-platform apps, and leverages Kotlin's strengths across ecosystems.
+
+In this training, we'll build a desktop app for Windows, but the concepts apply to mobile and web too.
 
 ---
 
-[Next: Day 2](../day2/index.md)
+[Task 1: Tool Installation and Setup](task1.md) | [Task 2: Program the Tile Parser](task2.md) | [Next: Day 2](../day2/index.md)

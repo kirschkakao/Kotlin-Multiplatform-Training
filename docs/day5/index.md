@@ -1,17 +1,14 @@
-# Day 5: Refinement and Presentation
+# Day 5: Refinement, Presentation and Feedback
 
 ### Aligning the Stand
 Everyone should have completed followers and scoring.
 
-### Task: Refine the App
-Work on refining the app and answer questions.
+### Introduction to Refinement and Best Practices
+Learn how to polish apps: debugging, testing, UI tweaks, and applying concepts to real projects.
 
-### Afternoon: Presentation and Feedback
-Present your work and provide feedback on the training.
-
-!!! success
-    Congratulations! You have built a complete Carcassonne game in Kotlin Multiplatform.
+### Introduction to Presentations and Feedback
+Present work to share learnings and gather insights for improvement.
 
 ---
 
-[Previous: Day 4](../day4/index.md)
+[Task 1: Refine the App](task1.md) | [Task 2: Presentation and Feedback](task2.md)

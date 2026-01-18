@@ -1,26 +1,20 @@
-# Day 2: Navigation and UI Basics
+# Day 2: Navigation, Architecture Basics and UI Introduction
 
 ### Aligning the Stand
 Ensure that everyone has completed the tile parser from Day 1.
 
 ### Introduction to Navigation Graphs
-Navigation graphs in KMP help manage the flow between screens. Learn how to define and navigate graphs.
+Navigation graphs in KMP help manage the flow between screens. Learn how to define routes, navigate between destinations, and pass data using NavHost and composables.
 
-### Task: Navigation Graph for the App
-Define a navigation graph for the complete app. Create classes for players and tiles.
-
-### Task: Screens for Player and Tile Selection
-Program screens for selecting players and tiles.
+### Introduction to Manual Dependency Injection
+Learn how to inject dependencies manually (e.g., via AppContainer) to achieve loose coupling. This includes creating Repositories and ViewModels for clean architecture.
 
 ### Introduction to Jetpack Compose
-Jetpack Compose is the modern UI framework for Android and KMP. Learn components, state management, and layouts.
+Jetpack Compose is the modern UI framework for Android and KMP. Learn composables, Modifier for styling, and basic layouts like Column and Row.
 
-### Task: Tile Display and Rotation
-Create a window that displays a random tile from the deck. Add buttons to rotate the tile. This will be used on the game screen later.
-
-!!! tip
-    Test the UI on Windows and check it in.
+### Introduction to State Management with StateFlows
+Learn how to manage UI state reactively using StateFlows in ViewModels. StateFlows emit state changes, triggering UI updates automatically.
 
 ---
 
-[Previous: Day 1](../day1/index.md) | [Next: Day 3](../day3/index.md)
+[Task 1: Navigation Graph and Architecture](task1.md) | [Task 2: UI Screens and Tile Display](task2.md) | [Next: Day 3](../day3/index.md)

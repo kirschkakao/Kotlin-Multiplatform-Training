@@ -26,13 +26,22 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - 'Day 1: Basics and Tile Parser':
+  - 'Day 1: Setup, Kotlin Basics and Tile Parser':
     - Overview: day1/index.md
-  - 'Day 2: Navigation and UI Basics':
+    - 'Task 1: Tool Installation and Setup': day1/task1.md
+    - 'Task 2: Program the Tile Parser': day1/task2.md
+  - 'Day 2: Navigation, Architecture Basics and UI Introduction':
     - Overview: day2/index.md
-  - 'Day 3: Grid and Game Board':
+    - 'Task 1: Navigation Graph and Architecture': day2/task1.md
+    - 'Task 2: UI Screens and Tile Display': day2/task2.md
+  - 'Day 3: Grid, Game Board and State Management':
     - Overview: day3/index.md
-  - 'Day 4: Followers and Scoring':
+    - 'Task 1: Reusable Grid Class': day3/task1.md
+    - 'Task 2: Program the Game Board': day3/task2.md
+  - 'Day 4: Followers, Scoring and Dependency Injection':
     - Overview: day4/index.md
-  - 'Day 5: Refinement and Presentation':
+    - 'Task 1: Place Followers and Calculate Points': day4/task1.md
+  - 'Day 5: Refinement, Presentation and Feedback':
     - Overview: day5/index.md
+    - 'Task 1: Refine the App': day5/task1.md
+    - 'Task 2: Presentation and Feedback': day5/task2.md

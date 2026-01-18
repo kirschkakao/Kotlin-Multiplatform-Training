@@ -1,17 +1,14 @@
-# Day 4: Followers and Scoring
+# Day 4: Followers, Scoring and Dependency Injection
 
 ### Aligning the Stand
 Everyone receives the finished game board.
 
-### Introduction to Manual Dependency Injection
-Learn how to inject dependencies manually to achieve loose coupling.
+### Deep Dive into Manual Dependency Injection
+Build on Day 2: Learn advanced DI patterns, such as injecting Repositories into ViewModels for testable, modular code.
 
-### Task: Place Followers and Calculate Points
-Program the placement of followers and the scoring. This is the hardest part, especially for meadows.
-
-!!! warning
-    Take the whole day for this; there are support materials.
+### Introduction to Game Logic and Scoring
+Understand follower placement rules and scoring mechanics. This involves complex state and calculations.
 
 ---
 
-[Previous: Day 3](../day3/index.md) | [Next: Day 5](../day5/index.md)
+[Task 1: Place Followers and Calculate Points](task1.md) | [Next: Day 5](../day5/index.md)

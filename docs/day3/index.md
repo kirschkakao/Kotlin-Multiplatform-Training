@@ -1,17 +1,14 @@
-# Day 3: Grid and Game Board
+# Day 3: Grid, Game Board and State Management
 
 ### Aligning the Stand
-Everyone should have completed navigation and tile display.
+Everyone should have completed navigation, tile display, and basic UI.
 
-### Task: Reusable Grid Class
-Program a grid class that is reusable for TileGrid, FollowerGrid, etc. Derive TileGrid and FollowerGrid from it.
+### Introduction to Grids and Layouts
+Learn how to create reusable grid components in Compose for game boards. Grids manage positioning and updates efficiently.
 
-### Task: Program the Game Board
-Try to create a game board where tiles can be placed and rotated according to the game rules.
-
-!!! note
-    This is a complex step; use the provided codebase as a guide.
+### Deep Dive into State Management
+Build on Day 2: Use StateFlows for complex state (e.g., grid positions). Learn how ViewModels handle business logic and UI updates.
 
 ---
 
-[Previous: Day 2](../day2/index.md) | [Next: Day 4](../day4/index.md)
+[Task 1: Reusable Grid Class](task1.md) | [Task 2: Program the Game Board](task2.md) | [Next: Day 4](../day4/index.md)
