@@ -1,4 +1,4 @@
-site_name: Mein Wiki
+site_name: Kotlin Multiplatform Training
 theme:
   name: material
   features:
@@ -26,3 +26,8 @@ markdown_extensions:
 
 nav:
   - Home: index.md
+  - Day 1: Basics and Tile Parser: day1.md
+  - Day 2: Navigation and UI Basics: day2.md
+  - Day 3: Grid and Game Board: day3.md
+  - Day 4: Followers and Scoring: day4.md
+  - Day 5: Refinement and Presentation: day5.md
