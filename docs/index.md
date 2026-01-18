@@ -7,8 +7,8 @@ This training introduces you to the development of Kotlin Multiplatform (KMP) ap
 
 ## Training Schedule
 
-- [Day 1: Basics and Tile Parser](day1.md)
-- [Day 2: Navigation and UI Basics](day2.md)
-- [Day 3: Grid and Game Board](day3.md)
-- [Day 4: Followers and Scoring](day4.md)
-- [Day 5: Refinement and Presentation](day5.md)
+- [Day 1: Basics and Tile Parser](day1/index.md)
+- [Day 2: Navigation and UI Basics](day2/index.md)
+- [Day 3: Grid and Game Board](day3/index.md)
+- [Day 4: Followers and Scoring](day4/index.md)
+- [Day 5: Refinement and Presentation](day5/index.md)

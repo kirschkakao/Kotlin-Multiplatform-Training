@@ -17,4 +17,4 @@ Program a parser in Kotlin that reads the tiles into an internal immutable data 
 
 ---
 
-[Next: Day 2](day2/index.md)
+[Next: Day 2](../day2/index.md)

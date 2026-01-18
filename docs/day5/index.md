@@ -14,4 +14,4 @@ Present your work and provide feedback on the training.
 
 ---
 
-[Previous: Day 4](day4/index.md)
+[Previous: Day 4](../day4/index.md)

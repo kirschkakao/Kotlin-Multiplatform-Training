@@ -14,4 +14,4 @@ Program the placement of followers and the scoring. This is the hardest part, es
 
 ---
 
-[Previous: Day 3](day3/index.md) | [Next: Day 5](day5/index.md)
+[Previous: Day 3](../day3/index.md) | [Next: Day 5](../day5/index.md)

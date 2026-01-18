@@ -14,4 +14,4 @@ Try to create a game board where tiles can be placed and rotated according to th
 
 ---
 
-[Previous: Day 2](day2/index.md) | [Next: Day 4](day4/index.md)
+[Previous: Day 2](../day2/index.md) | [Next: Day 4](../day4/index.md)

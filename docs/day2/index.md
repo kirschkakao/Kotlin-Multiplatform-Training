@@ -23,4 +23,4 @@ Create a window that displays a random tile from the deck. Add buttons to rotate
 
 ---
 
-[Previous: Day 1](day1/index.md) | [Next: Day 3](day3/index.md)
+[Previous: Day 1](../day1/index.md) | [Next: Day 3](../day3/index.md)
