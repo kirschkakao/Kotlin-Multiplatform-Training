@@ -2,9 +2,9 @@
 
 This training introduces you to the development of Kotlin Multiplatform (KMP) applications, with a practical focus on building a Carcassonne game.
 
-<img src="images/Desktop%20Highlights.png" width="200%">
+![Desktop Highlights](images/Desktop%20Highlights.png)
 
-Over 5 days, you will learn fundamental concepts of Kotlin, Jetpack Compose, Material Design 3, navigation graphs, state management with StateFlows, manual dependency injection and more while gradually developing a playable game.
+Over 5 days, you will learn fundamental concepts of Kotlin, Jetpack Compose, Material Design 3, navigation graphs, state management with StateFlows, and manual dependency injection while gradually developing a complete game.
 
 !!! note
     Make sure you have installed the required tools (see Day 1). The code will be provided in a separate repository, and you will check in your progress there.
