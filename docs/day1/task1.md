@@ -1,26 +1,38 @@
 # Task 1: Tool Installation and Setup
 
+In this training we use Android Studio as our IDE.
+
 ### Why Android Studio?
-Android Studio is the official IDE for Android development, but it's also excellent for Kotlin Multiplatform (KMP) projects. It provides powerful tools for code editing, debugging, and project management. With the Kotlin Multiplatform plugin, you can easily create and manage shared code across platforms. The Compose Multiplatform plugin enables you to build modern, declarative UIs that work on desktop, mobile, and web – perfect for our Carcassonne game!
+Android Studio is the official IDE for Android development, but it's also excellent for Kotlin Multiplatform (KMP) projects like the one we are going to build in this training. It provides powerful tools for code editing, debugging, previewing frontend elements and also provides virtual devices for App-development.
 
 ### Task: Install Tools and Set Up the Project
-1. **Download and Install Android Studio**: Go to the [Android Studio download page](https://developer.android.com/studio) and download the latest version for Windows. Follow the installation wizard.
-2. **Install Required Plugins**:
+1. **Download and Install Android Studio**: Go to the [Android Studio download page](https://developer.android.com/studio/archive), and download the latest Narwhal version for Windows (Android Studio Narwhal 4 Feature Drop | 2025.1.4 9. Oktober 2025). Note that there are more recent versions available like the _Otter_ versions, but unfortunately they are a bit unstable with regards to KMP-development.
+
+2. **Install Required Plugins**: After installation,
    - Open Android Studio and go to **File > Settings > Plugins**.
-   - Search for and install the **Kotlin Multiplatform** plugin (enables KMP project creation and management).
-   - Search for and install the **Compose Multiplatform IDE Support** plugin (provides better support for Jetpack Compose in multiplatform projects).
-3. **Install SDKs**: Ensure the Android SDK is installed (Android Studio usually handles this). For desktop, make sure Java JDK is available.
-4. **Check Out the Starting Repository**: Clone or download the start repository from the provided link. It contains an empty KMP app for Windows with the Carcassonne logo and assets.
-5. **Run the App**: Open the project in Android Studio, select the desktop run configuration, and click Run. The app should start and display the Carcassonne logo.
+   - Search for and install the **Compose Multiplatform** plugin (enables frontend element previews).
+
+3. **Check Out the Starting Repository**: Clone or download the start repository from the repository. It contains an empty KMP app for Windows with the Carcassonne logo and other required assets like the tile textures and the game rules as pdf.
+
+4. **Add run configuration**: Click on the three dots next to the bug logo in the top bar
+![three dots](../images/day1/threedots.png) and then on _Edit..._ to open the _Run/Debug configurations_. Then click on the "+"-icon to add a run configuration and choose "gradle"
+
+![add conf](../images/day1/add_configuration.png)
+
+Then add a name for the configuration and put "composeApp:run" into the run command line
+
+![command](../images/day1/config.png)
+
+Click _OK_ and you should now see your new run configuration next to the play button:
+![run conf](../images/day1/new_conf.png)
+
+
+5. **Run the App**: Select the desktop run configuration, and click _Run_ (green play button). The app should start and display a _JB_ programm window with a button called _Click me!_ that scrolls a _Carcassonne_ logo in and out.
 
 ### What It Should Look Like Now
-- Android Studio is installed and running.
-- The plugins are installed (check in Settings > Plugins).
-- The project opens without errors.
-- Running the app shows a window with the Carcassonne logo on Windows.
+![Desktop Highlights](../images/day1/Start1.png)
+![Desktop Highlights](../images/day1/Start2.png)
 
-!!! tip
-    If you encounter issues, check the [Android Studio setup guide](https://developer.android.com/studio/install) or ask the trainer.
 
 ---
 
