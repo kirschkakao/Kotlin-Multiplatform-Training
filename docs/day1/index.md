@@ -25,7 +25,6 @@
 
 #### Key Concepts
 - **Shared Code**: Write common logic (e.g., data models, networking) in Kotlin, compiled to platform-specific binaries.
-- **expect/actual**: Use `expect` declarations in shared code for platform-agnostic interfaces, and `actual` implementations for each platform. Example: `expect fun getPlatformName(): String` in common code, `actual fun getPlatformName() = "Windows"` in desktop code.
 - **Why KMP?**: Reduces code duplication, speeds up development for cross-platform apps, and leverages Kotlin's strengths across ecosystems.
 
 In this training, we'll build a desktop app for Windows, but the concepts apply to mobile and web too.

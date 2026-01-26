@@ -30,8 +30,8 @@ Click _OK_ and you should now see your new run configuration next to the play bu
 5. **Run the App**: Select the desktop run configuration, and click _Run_ (green play button). The app should start and display a _JB_ programm window with a button called _Click me!_ that scrolls a _Carcassonne_ logo in and out.
 
 ### What It Should Look Like Now
-![Desktop Highlights](../images/day1/Start1.png)
-![Desktop Highlights](../images/day1/Start2.png)
+![Desktop Highlights](../images/day1/start1.png)
+![Desktop Highlights](../images/day1/start2.png)
 
 
 ---
