@@ -1,23 +1,38 @@
-# Task 2: Program the Tile Parser
+# Task 2: Tool Installation and Setup
 
-### Why a Tile Parser?
-In game development, parsing data from files (like JSON) into usable objects is crucial. This task introduces you to Kotlin's data handling, immutability, and testing. You'll create a parser that reads tile descriptions from JSON, turning them into immutable data structures – a common pattern in KMP apps for loading game assets.
+In this training we use Android Studio as our IDE.
 
-### Task: Implement the Tile Parser
-1. **Understand the Data**: Review the Carcassonne manual and the provided JSON files (e.g., TileDescription.json) for tile metadata (connections, areas, features).
-2. **Create Data Classes**: Define immutable data classes in Kotlin for Tile, Areas, etc., using `data class`.
-3. **Implement the Parser**: Use Gson (or Kotlin's built-in JSON support) to parse the JSON into your data structures. Ensure immutability (use `val`).
-4. **Add Unit Tests**: Write tests to verify parsing works correctly (e.g., check if a tile has the right connections).
-5. **Integrate**: Load the tiles into your app's data layer (e.g., a simple list or map).
+### Why Android Studio?
+Android Studio is the official IDE for Android development, but it's also excellent for Kotlin Multiplatform (KMP) projects like the one we are going to build in this training. It provides powerful tools for code editing, debugging, previewing frontend elements and also provides virtual devices for App-development.
+
+### Task: Install Tools and Set Up the Project
+1. **Download and Install Android Studio**: Go to the [Android Studio download page](https://developer.android.com/studio/archive), and download the latest Narwhal version for Windows (Android Studio Narwhal 4 Feature Drop | 2025.1.4 9. Oktober 2025). Note that there are more recent versions available like the _Otter_ versions, but unfortunately they are a bit unstable with regards to KMP-development.
+
+2. **Install Required Plugins**: After installation,
+   - Open Android Studio and go to **File > Settings > Plugins**.
+   - Search for and install the **Compose Multiplatform** plugin (enables frontend element previews).
+
+3. **Check Out the Starting Repository**: Clone or download the start repository from the repository. It contains an empty KMP app for Windows with the Carcassonne logo and other required assets like the tile textures and the game rules as pdf.
+
+4. **Add run configuration**: Click on the three dots next to the bug logo in the top bar
+![three dots](../images/day1/threedots.png) and then on _Edit..._ to open the _Run/Debug configurations_. Then click on the "+"-icon to add a run configuration and choose "gradle"
+
+![add conf](../images/day1/add_configuration.png)
+
+Then add a name for the configuration and put "composeApp:run" into the run command line
+
+![command](../images/day1/config.png)
+
+Click _OK_ and you should now see your new run configuration next to the play button:
+![run conf](../images/day1/new_conf.png)
+
+
+5. **Run the App**: Select the desktop run configuration, and click _Run_ (green play button). The app should start and display a _JB_ programm window with a button called _Click me!_ that scrolls a _Carcassonne_ logo in and out.
 
 ### What It Should Look Like Now
-- Your code compiles without errors.
-- Running tests passes (e.g., parsing a sample tile returns the expected object).
-- You can access tile data in the app (though no UI yet).
-
-!!! tip
-    Use Kotlin's null safety and data classes for clean, error-free code. Check in your solution for review.
+![Desktop Highlights](../images/day1/start1.png)
+![Desktop Highlights](../images/day1/start2.png)
 
 ---
 
-[Previous: Task 1](task1.md) | [Next: Day 2](../day2/index.md)
+[Previous: Task 1](task1.md) | [Next: Task 3](task3.md)

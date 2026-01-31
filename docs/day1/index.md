@@ -1,34 +1,26 @@
 # Day 1: Setup, Kotlin Basics and Tile Parser
 
-[Task 1: Tool Installation and Setup](task1.md)
+## Overview
+Today you'll start your journey into Kotlin and Kotlin Multiplatform (KMP) development. We'll set up the necessary tools and dive into the fundamentals.
 
-### Introduction to Kotlin
-[Kotlin](https://kotlinlang.org/) is a modern, concise, and safe programming language developed by JetBrains. It runs on the Java Virtual Machine (JVM), making it fully interoperable with Java, and is designed for better productivity and fewer errors. Kotlin is officially supported for Android development and is increasingly used for server-side, web, and multiplatform projects.
+### Tools We Use
+For this training, we use two IDEs:
 
-#### Why Kotlin?
-- **Concise Syntax**: Less boilerplate code compared to Java – e.g., no semicolons needed, smart type inference.
-- **Null Safety**: Built-in null checks prevent common runtime errors like NullPointerExceptions.
-- **Interoperability**: Seamlessly works with existing Java code and libraries.
-- **Modern Features**: Supports functional programming, coroutines for asynchronous code, and more.
+- **Android Studio**: For the main Carcassonne training project (KMP desktop app)
+- **IntelliJ IDEA Community Edition**: For learning Kotlin basics and running small Kotlin tests independently
 
-#### Kotlin Basics You'll Learn Today
-- **Variables and Types**: Declare variables with `val` (immutable) or `var` (mutable). Kotlin infers types automatically: `val name = "Carcassonne"` (String).
-- **Functions**: Define reusable code blocks. Example: `fun greet(name: String): String = "Hello, $name!"`
-- **Classes and Data Classes**: Create objects. Data classes are perfect for holding data: `data class Tile(val id: Int, val name: String)`.
-- **Null Safety**: Use `?` for nullable types and safe calls (`?.`) or Elvis operator (`?:`) to handle nulls gracefully.
+Both IDEs share Kotlin's powerful development experience, so you'll become familiar with the Kotlin ecosystem.
 
-!!! tip
-    Practice these basics in the IDE. Kotlin's official documentation has interactive examples to try out.
+## Tasks Overview
 
-### Introduction to Kotlin Multiplatform (KMP)
-[Kotlin Multiplatform](https://kotlinlang.org/multiplatform/) (KMP) is a technology that allows you to write code once and run it on multiple platforms, such as Android, iOS, desktop (Windows, macOS, Linux), and web. It shares business logic while keeping platform-specific UI and APIs separate.
+### 1. [Kotlin Introduction](kotlin_introduction/index.md)
+Learn Kotlin fundamentals in **IntelliJ IDEA Community Edition**. This module covers everything you need to know about Kotlin before jumping into the main project. Since our training project is built with Kotlin Multiplatform (KMP), a solid understanding of Kotlin is essential.
 
-#### Key Concepts
-- **Shared Code**: Write common logic (e.g., data models, networking) in Kotlin, compiled to platform-specific binaries.
-- **Why KMP?**: Reduces code duplication, speeds up development for cross-platform apps, and leverages Kotlin's strengths across ecosystems.
+### 2. [Tool Installation and Setup](task1.md)
+Install **Android Studio** and configure your environment. Set up the Carcassonne training project and prepare your development workspace.
 
-In this training, we'll build a desktop app for Windows, but the concepts apply to mobile and web too.
+### 3. [Understand the Project Structure](task2.md)
+Explore the codebase of the Carcassonne KMP project. Learn how the project is organized and understand the architecture.
 
----
-
-[Task 1: Tool Installation and Setup](task1.md) | [Task 2: Program the Tile Parser](task2.md) | [Next: Day 2](../day2/index.md)
+### 4. [Implement the Tile Parser](task3.md)
+Program a tile parser to load game assets from JSON. This task reinforces Kotlin concepts like data classes and immutability while building a core component of the game.
