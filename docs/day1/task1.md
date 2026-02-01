@@ -3,7 +3,7 @@
 ### About This Task
 In this task, you'll learn **Kotlin fundamentals** using **IntelliJ IDEA Community Edition**. Since our training project is built with Kotlin Multiplatform (KMP), a solid understanding of Kotlin is essential.
 
-We've prepared a comprehensive Kotlin introduction module that covers all the basics you need to know before diving into the main project.
+We've prepared a comprehensive [Kotlin Introduction](https://kirschkakao.github.io/KotlinIntroduction/) module that covers all the basics you need to know before diving into the main project.
 
 ### Setup: IntelliJ IDEA Community Edition
 To complete this task, you need to install **IntelliJ IDEA Community Edition** with a proper Kotlin SDK:
@@ -15,7 +15,7 @@ The version doesn't matter too much – just ensure you have a recent version an
 
 
 ### Next Steps
-- Proceed to the [Kotlin Introduction module](kotlin_introduction/index.md) to start learning.
+- Proceed to the [Kotlin Introduction](https://kirschkakao.github.io/KotlinIntroduction/) to start learning.
 - Work through each chapter at your own pace.
 - Practice code examples in IntelliJ to reinforce your understanding.
 
