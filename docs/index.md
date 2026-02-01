@@ -22,10 +22,10 @@ In general, you can use all helping tools you like (Google, AI, etc.), but keep 
 
 ## Training Schedule
 
-| Day | Morning | Afternoon |
-|-----|---------|-----------|
-| [1](day1/index.md) | Introduction to Kotlin, Introduction to Kotlin Multiplatform (KMP) | independent work |
-| [2](day2/index.md) | Introduction to Navigation Graphs, Introduction to Manual Dependency Injection, Introduction to Jetpack Compose, Introduction to State Management with StateFlows | independent work |
-| [3](day3/index.md) | Introduction to Grids and Layouts, Deep Dive into State Management | independent work |
-| [4](day4/index.md) | Deep Dive into Manual Dependency Injection, Introduction to Game Logic and Scoring | independent work |
-| [5](day5/index.md) | Introduction to Refinement and Best Practices, Introduction to Presentations and Feedback | independent work |
+| Day | Content |
+|-----|---------|
+| [1](day1/index.md) | Introduction to Kotlin, Introduction to Kotlin Multiplatform (KMP) |
+| [2](day2/index.md) | Introduction to Navigation Graphs, Introduction to Manual Dependency Injection, Introduction to Jetpack Compose, Introduction to State Management with StateFlows |
+| [3](day3/index.md) | Introduction to Grids and Layouts, Deep Dive into State Management |
+| [4](day4/index.md) | Deep Dive into Manual Dependency Injection, Introduction to Game Logic and Scoring |
+| [5](day5/index.md) | Introduction to Refinement and Best Practices, Introduction to Presentations and Feedback |
