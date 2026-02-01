@@ -24,8 +24,9 @@ This course was developed to teach you the fundamentals of Kotlin through self-s
 
 ## Prerequisites
 
-- Basic programming knowledge (ideally Java)
-- IntelliJ IDEA or another Kotlin-supporting IDE
+This course does not require advanced coding skills, however, some basic programming knowledge (ideally Java) wouldn't hurt.
+
+To work with the examples presented in this course you might also want to install a Kotlin-supporting IDE like [JetBrains' IntelliJ IDEA Community edition](https://www.jetbrains.com/idea/download/). You can find a guide on how to setup your workspace in IntelliJ down below. Alternatively, you can use the official [Kotlin Playground](https://play.kotlinlang.org/) that provides an online IDE.
 
 ## Course Structure
 
@@ -62,7 +63,7 @@ Asynchronous Programming, launch, async/await, Structured Concurrency
 
 ## Your Workspace
 
-Start IntelliJ and create a new Kotlin Project using `File -> New -> Project...` and then choosing Kotlin on the left. Setup your Project like shown and click create:
+Start IntelliJ and create a new Kotlin Project using `File -> New -> Project...` and then choosing Kotlin on the left. Setup your Project like shown and click `Create`:
 
 ![new project](../../images/day1/kotlin_introduction/new_project.png)
 
@@ -70,21 +71,21 @@ Wait for the IDE to finish importing the project (lower right)
 
 ![new project](../../images/day1/kotlin_introduction/import_project.png)
 
-After the import is finished, your project structure should look like this:
+After the import is finished, your project structure should look like this (note for example the now blue squares and folders):
 
 ![new project](../../images/day1/kotlin_introduction/initial_project_structure.png)
 
-Right click the blue `Kotlin`-folder and shoose `New -> Kotlin Class/File`. Then add a Main.kt:
+Right click the blue `Kotlin`-folder and choose `New -> Kotlin Class/File`. Then add a Main.kt file:
 
 ![new project](../../images/day1/kotlin_introduction/new_main.png)
 
-Open the Main.kt and add a main function:
+Open the Main.kt and add a the `main()` function:
 
 ![new project](../../images/day1/kotlin_introduction/main_fun.png)
 
 Click the little green triangle/arrow left of the function to build/run the application. You are now set to follow along the course.
 
-You might want to add new files for every chapter to define variables and classes etc. to manage the contents. However, everything is executed through the main-function so you will have to add executable code like the given examples to main in order to run it.
+You might want to add new files for every chapter to define variables and classes etc. to manage the contents. However, everything is executed through the main-function so you will have to add executable code like the given examples to `main` in order to run it.
 
 
 ## Tips for Successful Learning

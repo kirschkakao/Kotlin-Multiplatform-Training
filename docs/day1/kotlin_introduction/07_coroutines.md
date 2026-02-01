@@ -38,8 +38,8 @@ suspend fun defineConsulting() {
 ```
 
 !!! important "delay vs Thread.sleep"
-- `delay()`: Pauses the coroutine, but doesn't block the thread
-- `Thread.sleep()`: Blocks the entire thread
+    - `delay()`: Pauses the coroutine, but doesn't block the thread
+    - `Thread.sleep()`: Blocks the entire thread
 
 To incorporate a suspending function into your sequentially running code, you can use `runBlocking` which starts a coroutine and
 blocks the main thread until completion:

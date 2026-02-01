@@ -127,6 +127,20 @@ val sortedDistinctNameList: List<String> = crazyNameList
     [Dominik, Kai, Laura, Sascha]
     ```
 
+!!! info "Sequences for Large Collections"
+    When working with large collections and multiple chained operations, consider using `asSequence()`:
+    
+    ```kotlin
+    val result = largeList
+        .asSequence()
+        .filter { /* ... */ }
+        .map { /* ... */ }
+        .toList()
+    ```
+    
+    Sequences evaluate lazily, which can significantly improve performance by avoiding intermediate collections.
+    However, every operation that produces a new collection (like `toList()`, `groupBy()` or `sorted()`) will force evaluation, so use them judiciously.
+
 ## Advanced Operations
 
 ### groupBy
@@ -167,10 +181,11 @@ val groupedByFirstLetter = words.groupBy { it.first() }
 Reduces a collection to a single value by applying an operation. Unlike `map` or `filter`, `fold` doesn't return a collection by default but can return any type as single accumulated result.
 
 **How `fold` works:**
+
 1. You provide an **initial value** (the starting accumulator)
 2. For each element in the collection, `fold` calls your lambda with two parameters:
-   - `acc` - the current accumulator (starts as the initial value)
-   - The current element
+    - `acc` - the current accumulator (starts as the initial value)
+    - The current element
 3. Your lambda **returns the new accumulator value**
 4. After all elements are processed, `fold` returns the final accumulator
 
@@ -329,22 +344,6 @@ This shows the power of `fold` - the result type (`List<Int>`) is completely ind
 4. **Use method references** (`::function`) when applicable for cleaner code
 5. **Keep lambda expressions simple** - extract complex logic into separate functions
 6. **Consider performance** - chaining creates intermediate collections (use `asSequence()` for large collections)
-
-## Performance Consideration
-
-??? info "Sequences for Large Collections"
-    When working with large collections and multiple chained operations, consider using `asSequence()`:
-    
-    ```kotlin
-    val result = largeList
-        .asSequence()
-        .filter { /* ... */ }
-        .map { /* ... */ }
-        .toList()
-    ```
-    
-    Sequences evaluate lazily, which can significantly improve performance by avoiding intermediate collections.
-    However, every operation that produces a new collection (like `toList()`, `toSet()`, etc.) will force evaluation, so use them judiciously.
 
 ## Further Reading
 

@@ -13,14 +13,14 @@ Both IDEs share Kotlin's powerful development experience, so you'll become famil
 
 ## Tasks Overview
 
-### 1. [Kotlin Introduction](kotlin_introduction/index.md)
+### 1. [Kotlin Introduction](task1.md)
 Learn Kotlin fundamentals in **IntelliJ IDEA Community Edition**. This module covers everything you need to know about Kotlin before jumping into the main project. Since our training project is built with Kotlin Multiplatform (KMP), a solid understanding of Kotlin is essential.
 
-### 2. [Tool Installation and Setup](task1.md)
+### 2. [Tool Installation and Setup](task2.md)
 Install **Android Studio** and configure your environment. Set up the Carcassonne training project and prepare your development workspace.
 
-### 3. [Understand the Project Structure](task2.md)
+### 3. [Understand the Project Structure](task3.md)
 Explore the codebase of the Carcassonne KMP project. Learn how the project is organized and understand the architecture.
 
-### 4. [Implement the Tile Parser](task3.md)
+### 4. [Implement the Tile Parser](task4.md)
 Program a tile parser to load game assets from JSON. This task reinforces Kotlin concepts like data classes and immutability while building a core component of the game.

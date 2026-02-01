@@ -13,7 +13,7 @@ var nullable: String? = null     // Can be null (with ?)
 
 Per default, types are non-nullable. To allow a variable to hold a `null` value, you must explicitly declare its type and mark it as nullable by appending `?` to the type.
 
-!!! example "Try it out"
+??? example "Try it out"
     ```kotlin
     var notNullable = "Hello" //inferred as String (without ?)
     notNullable = null  // Compilation error!
@@ -57,7 +57,7 @@ val length = person?.address?.street?.length
 
 If any value in the chain is `null`, the entire expression returns `null`.
 
-!!! example "Try it out"
+??? example "Try it out"
     ```kotlin
     val name: String? = "Kotlin"
     val nullName: String? = null
@@ -81,7 +81,7 @@ val length = nullable?.length ?: 0  // Returns 0 if nullable is null
 
 The name comes from the emoticon that resembles Elvis Presley's hairstyle: `?:`
 
-!!! example "Try it out"
+??? example "Try it out"
     ```kotlin
     println(foo("Hello"))
     // println(foo(null))  // Compilation error!
@@ -106,7 +106,7 @@ fun getUserName(userId: Int?): String {
 }
 ```
 
-!!! example "Try it out"
+??? example "Try it out"
     ```kotlin
     val authorMap: Map<String, List<String>> = mapOf(
         "J.R.R. Tolkien" to listOf("The Lord of the Rings", "The Hobbit")
@@ -138,7 +138,7 @@ val length = nullable!!.length  // Throws NPE if nullable is null
 !!! warning "Not-Null Assertion (!!)"
     Use `!!` only when you are absolutely certain the value is not null. It throws a `NullPointerException` if it is null. This defeats the purpose of Kotlin's null-safety and should be avoided in most cases.
 
-!!! example "Try it out (with caution)"
+??? example "Try it out (with caution)"
     ```kotlin
     val name: String? = "Kotlin"
     println(name!!.length)  // Works, prints 6
@@ -178,7 +178,7 @@ name?.let { nonNullName ->
 
 The `let` function is particularly useful when you want to perform multiple operations on a nullable value without repeating null-checks:
 
-!!! example "Try it out"
+??? example "Try it out"
     ```kotlin
     val name: String? = "Kotlin"
     
@@ -219,7 +219,7 @@ val info = text.run {
 }
 ```
 
-!!! example "Try it out"
+??? example "Try it out"
     ```kotlin
     val result = "Hello".run {
         println("Processing: $this")
@@ -244,7 +244,7 @@ val number = 42
     .also { println("Doubled: ${it * 2}") }
 ```
 
-!!! example "Try it out"
+??? example "Try it out"
     ```kotlin
     val name = "Kotlin"
         .also { println("Created: $it") }
@@ -271,7 +271,7 @@ val person = Person().apply {
 }
 ```
 
-!!! example "Try it out"
+??? example "Try it out"
     ```kotlin
     data class Book(var title: String = "", var author: String = "")
     
@@ -298,7 +298,7 @@ with(person) {
 }
 ```
 
-!!! example "Try it out"
+??? example "Try it out"
     ```kotlin
     val text = "Kotlin"
     
@@ -361,11 +361,13 @@ with(person) {
        // Safe operations here
    }
    ```
+
 5. **Choose the right scope function for non-null operations**:
-   - **`run`** when you need to return a computed result
-   - **`also`** for side effects and chaining
-   - **`apply`** for object initialization (builder pattern)
-   - **`with`** for multiple operations on a single object
+    - **`run`** when you need to return a computed result
+    - **`also`** for side effects and chaining
+    - **`apply`** for object initialization (builder pattern)
+    - **`with`** for multiple operations on a single object
+
 6. **Design your APIs to minimize nullability** - make parameters non-nullable when possible
 
 ## Further Reading
