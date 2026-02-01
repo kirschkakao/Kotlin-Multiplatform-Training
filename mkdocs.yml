@@ -7,20 +7,32 @@ theme:
     - toc.integrate
     - search.suggest
     - search.highlight
+    - content.code.copy
   palette:
     - scheme: default
       primary: indigo
       accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
     - scheme: slate
       primary: black
       accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
 plugins:
   - search
 markdown_extensions:
   - admonition
-  - pymdownx.details  # Für kollabierbare Abschnitte
-  - pymdownx.superfences  # Für Code-Blöcke
-  - pymdownx.tabbed  # Für Tabs
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
   - toc:
       permalink: true
 
@@ -28,9 +40,7 @@ nav:
   - Home: index.md
   - 'Day 1: Setup, Kotlin Basics and Tile Parser':
     - Overview: day1/index.md
-    - 'Task 1: Learn Kotlin Basics':
-      - Overview: day1/task1.md
-      - 'Kotlin Introduction': day1/kotlin_introduction/index.md
+    - 'Task 1: Learn Kotlin Basics': day1/task1.md
     - 'Task 2: Tool Installation and Setup': day1/task2.md
     - 'Task 3: Understand the Project Structure': day1/task3.md
     - 'Task 4: Implement the Tile Parser': day1/task4.md
