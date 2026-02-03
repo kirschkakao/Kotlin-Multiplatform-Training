@@ -23,6 +23,7 @@ theme:
         name: Switch to light mode
 plugins:
   - search
+  - mermaid2
 markdown_extensions:
   - admonition
   - pymdownx.details
