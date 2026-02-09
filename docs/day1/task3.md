@@ -61,7 +61,9 @@ This approach gives us **separation of concerns**—each layer has one job and d
 
 According to this architecture, the app should be divided into three main layers, the UI layer, the domain layer and the data layer.
 
-![layer architecture](../images/day1/layer_architecture.png)
+<div style="text-align: center;">
+  <img src="../images/day1/layer_architecture.png" alt="layer architecture" width="40%">
+</div>
 
 The **UI Layer** contains the Jetpack Compose code for the user interface—all graphical elements and user interactions.<br>
 The **Domain Layer** sits between the UI and data layers, containing the business logic and state management that updates the UI when values change.<br>
