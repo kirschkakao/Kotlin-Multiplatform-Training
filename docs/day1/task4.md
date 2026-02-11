@@ -52,18 +52,32 @@ The most interesting and challenging part of designing the data structure for ga
 However, edge information alone doesn't tell us how the *areas* on those edges are organized. For example, the **CCFF** tiles (page 57 right) exist in three different versions in the base game — cities can be connected (one city on the tile) or disconnected (two separate cities). Plus, a city might have a pennant, which changes how scoring works.<br>
 With farms it gets trickier still. Look at the **CCCR** tiles (page 57 left). The edge information we need for placement rules tells us nothing about the two distinct farm areas on the west side of the tile. So edge information is enough to enforce placement rules, but it's not enough to understand the actual area layout.
 
-In the solution provided with this course, we model tiles using two different approaches at the same time: one to track actual areas, and one to quickly check placement rules. You might want to model tiles differently—you're absolutely encouraged to think about your own approach.
+In the solution provided with this course, we model tiles using two different approaches at the same time: one to track actual areas, and one to quickly check placement rules. You might want to model tiles differently — you're absolutely encouraged to think about your own approach.
 
 !!! example "Task"
     Model the `Tile` data structure such that all game rules can be applied. (Or follow the approach provided below if you prefer.) 
 
 #### Hybrid tile modeling
 
+Our hybrid approach uses two representations working together. First, we track the *connections* at each edge of the tile — this gives us everything we need to check placement rules quickly. Then, we separately track the *actual areas* inside the tile with their detailed topology — this lets us handle scoring and follower placement correctly.
+
+Let's start with connections. Each edge of a tile (north, east, south, west) connects three possible terrain types: cities (C), roads (R), or farms (F).
 
 !!! example "Task"
-    Add an enum class `Edge` to the `tile.data` package and add possible values according to the 
+    Add an enum class `Connection` to the `tile.data` package with values `C`, `R`, and `F`. Then add a `connections` attribute to `Tile` of type `List<Connection>`, storing the four connections in order: north, east, south, west.
+
+Now for the actual area distribution within the tile. An area consists of edges and corners, depending on the type. Roads connect only through edges, cities connect only through edges, but farms are trickier — they connect both through edges and corners. That said, when a farm connects over a corner (like the northeast corner), it implicitly includes the adjacent non-city edges. So we only need to track farm corners, not their edge connections.
+
+!!! example "Task"
+    Add an enum class `Edge` to the `tile.data` package with the four edges (North, East, South, West). Then add an enum class `Corner` with the four corners (NorthEast, SouthEast, SouthWest, NorthWest). Add a data class `Areas` that holds three attributes: `cities`, `roads`, and `farms`, each as `List<List<...>>` with the appropriate edge or corner type.
+
+Finally, we need to handle special features like cloisters and pennants.
+
+!!! example "Task"
+    Add an enum class `Feature` to the `tile.data` package with values for cloisters and pennants. Then add a `features` attribute to `Tile` of type `List<Feature>` (since a tile can have multiple features). Also add the `areas` attribute of type `Areas` to `Tile`.
 
 ### Tile metadata assets
+
 
 #### Json parser
 
