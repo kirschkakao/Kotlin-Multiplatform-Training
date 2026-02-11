@@ -14,7 +14,7 @@ In this task, you will add all necessary objects needed to represent the game ti
 
 ### Tile data structure
 First we need to add some data structures that define what a tile is and what the elements on a tile are. These type of objects are static data type definitions and belong into the data layer. Since the data layer is currently not present in the tile package, we have to add it.
-!!! task "Task":
+!!! example "Task":
     add a package `data` to the `tile`package
 
 
