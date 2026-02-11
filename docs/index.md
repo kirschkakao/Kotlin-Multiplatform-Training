@@ -6,6 +6,14 @@ This training introduces you to the development of Kotlin Multiplatform (KMP) ap
 
 Over 5 days, you will learn fundamental concepts of Kotlin, Jetpack Compose, Material Design 3, navigation graphs, state management with StateFlows and more while gradually developing a complete game.
 
+### Kotlin Multiplatform
+
+The framework you'll learn and build with in this course is [Kotlin Multiplatform (KMP)](https://kotlinlang.org/multiplatform/). It's a modern approach that lets you write your code once and run it on Android, iOS, web, and desktop — no need to rewrite everything for each platform. You share your business logic, data models, and core functionality everywhere, and then use platform-specific tools for the UI layer when you need something tailored to a particular device. For the user interface, KMP gives you [Compose Multiplatform](https://kotlinlang.org/compose-multiplatform/), a declarative framework built on Google's [Material Design](https://m3.material.io/) that makes creating beautiful, responsive interfaces feel natural and intuitive.
+
+What's really nice about KMP is that it combines everything you need in one place. You get a clean three-layer architecture with ViewModels and StateFlows for managing state, which keeps your code organized and your application robust—all with less boilerplate than you might expect. It's approachable enough that you can understand what's happening at each layer without feeling overwhelmed by complexity.
+
+### What to expect
+
 Since this course is a bit more advanced than the introductory courses, participants are expected to have successfully completed at least the basic IT training and have a fundamental understanding of modern programming techniques and tools such as:
 
 - version control with Git
@@ -19,6 +27,8 @@ In general, you can use all helping tools you like (Google, AI, etc.), but keep 
 
 !!! note
     The code will be provided in a separate repository, and you will check in your progress there.
+
+
 
 ## Training Schedule
 

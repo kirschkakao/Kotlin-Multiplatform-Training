@@ -1,29 +1,23 @@
-# Task 4: Implement the Tile Parser
+# Task 4: Tile assets and parser
 
-### About This Task
-In game development, parsing data from files (like JSON) into usable objects is crucial. This task reinforces Kotlin concepts like data classes and immutability while building a core component of the Carcassonne game engine.
+### On assets and persistent data
+There are two types of data that lives through both, the closing of the app and the shutdown of the machine on which the app runs as well, assets and persistent data.
+**Persistent data** in software development relates to dynamic data which changes while using the app, e.g. emails, messages and contacts in communication apps. This type of persistence is usually achieved through local databases which are stored on the hard disk. 
+On the other hand, non-dynamical i.e. static data that is shipped with the app is referred to as **assets**. Those can be texts and fonts of the app itself (like of the menu bar) or textures.<br>
+In our Carcassonne Game the tile-data is an typical example of assets, while a leaderboard for example would be an typical example of persistent data.
 
-### Why a Tile Parser?
-The Tile Parser reads game asset descriptions from JSON files and converts them into immutable Kotlin data structures. This is a fundamental pattern in Kotlin Multiplatform apps for loading and managing game data.
+### Tile assets
+For Carcassonne we need two types of assets for the game tiles. One of which, the textures, were already shipped with your project files (see `CarcassonneTiles.jpg` in the common resources). The other one is tile metadata which describes what's actually shown on a tile, e.g. streets or castles and how they are arranged. This is needed in order to implement the logic that represent the game rules. For example, we need to now algorithmicly where and in which oriontation we can place a tile on the current board, were we can place followers and how big our cities or how long the streets are.
 
-### Task: Implement the Tile Parser
-1. **Understand the Data**: Review the Carcassonne manual and the provided JSON files (e.g., TileDescription.json) for tile metadata (connections, areas, features).
+## Add Tile data structures and metadata assets
 
-2. **Create Data Classes**: Define immutable data classes in Kotlin for Tile, Areas, etc., using `data class`. These should match the structure of your JSON files.
+### Tile data structure
 
-3. **Implement the Parser**: Use Gson (or Kotlin's built-in JSON support) to parse the JSON into your data structures. Ensure immutability (use `val`).
+### Tile metadata assets
 
-4. **Add Unit Tests**: Write tests to verify parsing works correctly (e.g., check if a tile has the right connections).
+#### Json parser
 
-5. **Integrate**: Load the tiles into your app's data layer (e.g., a simple list or map) so they can be used by the game engine.
 
-### What It Should Look Like Now
-- Your code compiles without errors
-- Running tests passes (e.g., parsing a sample tile returns the expected object)
-- You can access tile data in the app (though no UI yet)
-
-!!! tip
-    Use Kotlin's null safety and data classes for clean, error-free code. Check in your solution for review.
 
 ---
 

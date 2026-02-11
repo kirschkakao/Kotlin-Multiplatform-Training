@@ -3,11 +3,11 @@
 ### About This Task
 Now that you have installed Android Studio and set up the project, it's time to explore the codebase. Understanding the structure of a Kotlin Multiplatform project is crucial for making informed decisions during development.
 
-### Task: Explore the Carcassonne KMP Project
+### Task: Explore the Carcassonne Project
 
 1. **Open the Project**: Launch Android Studio and open the Carcassonne project you cloned in Task 2.
 
-2. **Navigate the Directory Structure**: Take time to explore and understand:
+2. **Navigate the Directory Structure**: Take time to explore and understand the project structure
 
 ### Project Structure Overview
 
@@ -45,12 +45,14 @@ Carcassonne/
     - Check `commonMain/resources/` for game rules and the tile textures - reading the rules will help you understand the game logic you're implementing.
     - Look at existing test files in `commonTest/kotlin/`
 
-
 4. **Explore the Packages**:
-Explore the `kotlin/` packages to see the current structure
     - Open each package (core, tile, ui, welcome) and note what files exist
     - Read any existing Kotlin files to understand the current implementation
     - Identify which packages are fully implemented and which are still being built according to the architecture pattern (see below)
+
+### The Kotlin Multiplatform code structure
+As you can see in the Project Structure Overview, the project contains packages for both common code and platform-specific code—`commonMain` and `desktopMain`. These packages exist because Kotlin Multiplatform (KMP) enables you to ship your app to various hardware platforms: Android, iPhone, tablets, web, and desktop. While much of your codebase can be shared across platforms, some aspects need to be implemented differently or added due to specific hardware requirements or limitations. That's why you always have the `commonMain` package for shared code, complemented by platform-specific packages for code that differs by platform. In our case, since we're building only for desktop, we simply have the `desktopMain` package alongside the common code.<br>
+You will learn more about Kotlin Multiplatform in later tasks.
 
 ### Code Architecture Pattern
 This project follows Google's recommended [App Architecture](https://developer.android.com/topic/architecture).
@@ -62,7 +64,7 @@ This approach gives us **separation of concerns**—each layer has one job and d
 According to this architecture, the app should be divided into three main layers, the UI layer, the domain layer and the data layer.
 
 <div style="text-align: center;">
-  <img src="../images/day1/layer_architecture.png" alt="layer architecture" width="40%">
+  <img src="../../images/day1/layer_architecture.png" alt="layer architecture" width="40%">
 </div>
 
 The **UI Layer** contains the Jetpack Compose code for the user interface—all graphical elements and user interactions.<br>
@@ -171,6 +173,7 @@ The core package is special because it's shared across all features. It provides
 
 !!! note
     This introductory course focuses on Kotlin and architecture principles rather than database implementation. Instead of using real databases and DAOs, we'll simulate these concepts with simple Kotlin Collections for temporary data and JSON files for persistent storage. This keeps the focus on learning the architecture pattern itself, which you can later apply to real databases.
+
 
 ## Next Step
 

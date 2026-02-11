@@ -9,12 +9,10 @@ For this training, we use two IDEs:
 - **Android Studio**: For the main Carcassonne training project (KMP desktop app)
 - **IntelliJ IDEA Community Edition**: For learning Kotlin basics and running small Kotlin tests independently
 
-Both IDEs share Kotlin's powerful development experience, so you'll become familiar with the Kotlin ecosystem.
-
 ## Tasks Overview
 
 ### 1. [Kotlin Introduction](task1.md)
-Learn Kotlin fundamentals in **IntelliJ IDEA Community Edition**. This module covers everything you need to know about Kotlin before jumping into the main project. Since our training project is built with Kotlin Multiplatform (KMP), a solid understanding of Kotlin is essential.
+Learn Kotlin fundamentals in **IntelliJ IDEA Community Edition**. This module covers everything you need to know about Kotlin before jumping into the main project.
 
 ### 2. [Tool Installation and Setup](task2.md)
 Install **Android Studio** and configure your environment. Set up the Carcassonne training project and prepare your development workspace.
@@ -22,5 +20,5 @@ Install **Android Studio** and configure your environment. Set up the Carcassonn
 ### 3. [Understand the Project Structure](task3.md)
 Explore the codebase of the Carcassonne KMP project. Learn how the project is organized and understand the architecture.
 
-### 4. [Implement the Tile Parser](task4.md)
-Program a tile parser to load game assets from JSON. This task reinforces Kotlin concepts like data classes and immutability while building a core component of the game.
+### 4. [Tile assets data and Tile parser](task4.md)
+Add tile assets and data models and program tile parsers to load usable game tile objects.
