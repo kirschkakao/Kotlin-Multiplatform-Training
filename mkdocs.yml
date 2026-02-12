@@ -50,7 +50,8 @@ nav:
     - 'Task 1: Learn Kotlin Basics': day1/task1.md
     - 'Task 2: Tool Installation and Setup': day1/task2.md
     - 'Task 3: Understand the Project Structure': day1/task3.md
-    - 'Task 4: Implement the Tile Parser': day1/task4.md
+    - 'Task 4: Adding the game Tiles': day1/task4.md
+    - Summary: day1/summary.md
   - 'Day 2: Navigation, Architecture Basics and UI Introduction':
     - Overview: day2/index.md
     - 'Task 1: Navigation Graph and Architecture': day2/task1.md

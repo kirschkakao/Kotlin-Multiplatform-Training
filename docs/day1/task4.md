@@ -69,20 +69,131 @@ Let's start with connections. Each edge of a tile (north, east, south, west) con
 Now for the actual area distribution within the tile. An area consists of edges and corners, depending on the type. Roads connect only through edges, cities connect only through edges, but farms are trickier — they connect both through edges and corners. That said, when a farm connects over a corner (like the northeast corner), it implicitly includes the adjacent non-city edges. So we only need to track farm corners, not their edge connections.
 
 !!! example "Task"
-    Add an enum class `Edge` to the `tile.data` package with the four edges (North, East, South, West). Then add an enum class `Corner` with the four corners (NorthEast, SouthEast, SouthWest, NorthWest). Add a data class `Areas` that holds three attributes: `cities`, `roads`, and `farms`, each as `List<List<...>>` with the appropriate edge or corner type.
+    Add an enum class `Edge` to the `tile.data` package with the four edges (cardinal directions). Then add an enum class `Corner` with the four corners (diagonal directions like north east). Add a data class `Areas` that holds three attributes: `cities`, `roads`, and `farms`, each as `List<List<...>>` with the appropriate edge or corner type.
 
 Finally, we need to handle special features like cloisters and pennants.
 
 !!! example "Task"
     Add an enum class `Feature` to the `tile.data` package with values for cloisters and pennants. Then add a `features` attribute to `Tile` of type `List<Feature>` (since a tile can have multiple features). Also add the `areas` attribute of type `Areas` to `Tile`.
 
-### Tile metadata assets
+### Tile data assets
 
+Great! We now have a comprehensive data structure for game tiles. Your `Tile` class should look something like this:
 
-#### Json parser
+```Kotlin
+data class Tile(
+    val expansion: Expansion = Expansion.BASEGAME,
+    val connections: List<Connection>,
+    val areas: Areas,
+    val features: List<Feature>,
+    var texture: Any? = null,
+    val start: Boolean = false
+)
+```
 
+Each tile in the game will be represented by an instance of this class. Now comes an important question: where does the data for all these tile instances come from? The base game has 72 tiles, each with its own unique combination of connections, areas, and features. We could hard-code all of this in Kotlin—creating 72 tile instances directly in our code—but that would be tedious, error-prone, and hard to maintain or extend later.
 
+Instead, we'll store the tile information in a separate data file that our app reads when it starts. This is where assets come in. Since tiles never change during gameplay, we can define them once in a structured format and load them into our `Tile` instances. For this course, we're using JSON because it's human-readable, easy to edit, and straightforward to extend when you want to add expansions later. Think of the JSON file as a blueprint for all tiles — it describes what each tile looks like, and our code will transform those descriptions into usable objects.
+
+#### JSON parser
+
+To parse the tile asset JSON into instances of `Tile`, we'll use Google's Gson library. Take a look at your `build.gradle.kts` file—you'll see:
+
+```Kotlin
+implementation("com.google.code.gson:gson:2.8.9")
+```
+
+This means Gson is already available in your project. We don't need to install anything; we just need to understand how it works and structure our JSON so Gson can properly deserialize it into `Tile` objects.
+
+#### Test-driven development
+
+Before we create the full tile asset JSON, let's use test-driven development. We'll write unit tests that verify, step by step, that we can parse Areas, then Tiles, then lists of Tiles, and finally complete tile decks from different expansions.
+
+!!! example "Task"
+    Add a `GsonTest` class to the `commonTest/kotlin` package and create a `fluffAreas.json` file in a new `commonTest/resources` folder. (You may need to create the `resources` folder if it doesn't exist.)
+
+Look at the existing `FreeFunctionTest.kt` to understand how Kotlin unit tests are structured and named. We'll follow the same principles for our JSON parser tests.
+
+Let's start by testing `Areas` parsing. Add some sample data to `fluffAreas.json`—it doesn't have to represent real game areas, just valid structures:
+
+```json
+{
+  "cities": [
+    ["N", "E"],
+    ["W"]
+  ],
+  "farms": [
+    ["NE"],
+    ["NW", "SW"]
+  ],
+  "roads": [
+    ["S"]
+  ]
+}
+```
+
+!!! example "Task"
+    Add a JSON-formatted `Areas` definition to `fluffAreas.json`.
+
+Now write the corresponding unit test.
+
+!!! example "Task"
+    Add a unit test to `GsonTest` that verifies your JSON `Areas` definition is correctly parsed into an `Areas` instance.
+
+Here's how to use Gson with resource streams:
+
+!!! tip "Parsing with Gson"
+    ```Kotlin
+    val reader = InputStreamReader(stream)
+    data = Gson().fromJson(reader, Areas::class.java)
+    ```
+    To get the resource stream, use `getResourceAsStream` with `let`:
+    ```Kotlin
+    this::class.java.getResourceAsStream("/fluffAreas.json")?.let { stream ->
+        // parse here
+    }
+    ```
+
+Your test assertion should match the structure of your JSON. For the example above:
+
+```Kotlin
+assert(
+    Areas(
+        cities = listOf(listOf(Edge.N, Edge.E), listOf(Edge.W)),
+        farms = listOf(listOf(Corner.NE), listOf(Corner.NW, Corner.SW)),
+        roads = listOf(listOf(Edge.S))
+    ) == data
+)
+```
+
+Run the test by clicking the green triangle next to the test method or test class.
+
+!!! example "Task"
+    Add test data and corresponding unit tests for:
+    - A single `Tile` instance
+    - A list of `Tile` instances
+    - Tile decks with different `Expansion` types
+
+!!! tip "Enum serialization with Gson"
+    If Gson has trouble serializing enum values like `Expansion`, you may need to add a `@SerializedName("...")` annotation to specify how each enum value appears in JSON:
+    ```Kotlin
+    enum class Expansion {
+        @SerializedName("basegame")
+        BASEGAME,
+        @SerializedName("expansion1")
+        EXPANSION1
+    }
+    ```
+
+#### Adding the tile assets
+
+Now that you understand how to structure JSON for Gson to parse correctly, you can create the complete tile asset file defining all 72 tiles from the base game.
+
+!!! example "Task"
+    Create a `TileDescriptions.json` file in the same location as `CarcassonneTiles.jpg` (in `commonMain/resources`). Add a JSON structure for each of the 72 base game tiles, ordering them to match their position in the texture file. This will make it easier to connect each tile to its texture later.
+
+Congratulations! You've completed all of today's tasks. You've built a solid foundation for the game with a comprehensive tile data structure and asset management system.
 
 ---
 
-[Previous: Task 3](task3.md) | [Next: Day 2](../day2/index.md)
+[Previous: Task 3](task3.md) | [Next: Summary](summary.md)
