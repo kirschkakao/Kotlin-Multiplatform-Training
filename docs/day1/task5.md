@@ -77,7 +77,7 @@ In our case, where we don't actually connect to a database with real tables, we 
 While the `Database` class lives in the core package (because it's relevant across the entire codebase), DAOs belong to the data layer of the specific package whose tables they access.
 
 !!! example "Task"
-    Add a class `TileDAO` to the `tile.data` package with two private constructor parameters: one for the tile catalog and one for the draw pile.
+    Add a class `TileDao` to the `tile.data` package with two private constructor parameters: one for the tile catalog and one for the draw pile. The catalog should be immutable.
 
 When building a codebase, we normally can't predict exactly which methods the DAO will need, so we add them as we go. For this course, though, we'll assume we already know we need the following methods:
 
@@ -89,12 +89,12 @@ When building a codebase, we normally can't predict exactly which methods the DA
 - `getStart(): Tile?` - returns the starting tile from the draw pile
 
 !!! example "Task"
-    Add the methods listed above to your `TileDAO` class.
+    Add the methods listed above to your `TileDao` class.
 
 The tile DAO is now ready and just needs to be connected to the `Database` class.
 
 !!! example "Task"
-    Add a `tileDao` attribute of type `TileDAO` to the `Database` class. Make it accessible from outside but not writable. Initialize the DAO in the init block, passing in the tile catalog and draw pile.
+    Add a `tileDao` attribute of type `TileDao` to the `Database` class. Make it accessible from outside but not writable. Initialize the DAO in the init block, passing in the tile catalog and draw pile.
 
 Now you're all set. Your database can be instantiated anywhere in the code via the singleton accessor, and the DAO can be retrieved to access the tables through its methods.
 
