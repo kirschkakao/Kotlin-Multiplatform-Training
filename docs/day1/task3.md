@@ -1,9 +1,8 @@
 # Task 3: Understand the Project Structure
 
-### About This Task
 Now that you have installed Android Studio and set up the project, it's time to explore the codebase. Understanding the structure of a Kotlin Multiplatform project is crucial for making informed decisions during development.
 
-### Task: Explore the Carcassonne Project
+### Explore the Carcassonne Project
 
 1. **Open the Project**: Launch Android Studio and open the Carcassonne project you cloned in Task 2.
 

@@ -1,4 +1,4 @@
-# Task 4: Adding the game Tiles
+# Task 4: Adding game Tile assets
 Now that everything is set up, we can start building the game itself. Before we touch any code, it helps to understand how Carcassonne works and what a tile represents.
 
 !!! example "Task"
@@ -192,8 +192,6 @@ Now that you understand how to structure JSON for Gson to parse correctly, you c
 !!! example "Task"
     Create a `TileDescriptions.json` file in the same location as `CarcassonneTiles.jpg` (in `commonMain/resources`). Add a JSON structure for each of the 72 base game tiles, ordering them to match their position in the texture file. This will make it easier to connect each tile to its texture later.
 
-Congratulations! You've completed all of today's tasks. You've built a solid foundation for the game with a comprehensive tile data structure and asset management system.
-
 ---
 
-[Previous: Task 3](task3.md) | [Next: Summary](summary.md)
+[Previous: Task 3](task3.md) | [Next: Task 5](task5.md)

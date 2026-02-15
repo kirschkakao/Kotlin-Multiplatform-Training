@@ -20,5 +20,8 @@ Install **Android Studio** and configure your environment. Set up the Carcassonn
 ### 3. [Understand the Project Structure](task3.md)
 Explore the codebase of the Carcassonne KMP project. Learn how the project is organized and understand the architecture.
 
-### 4. [Tile assets data and Tile parser](task4.md)
-Add tile assets and data models and program tile parsers to load usable game tile objects.
+### 4. [Adding Game Tile Assets](task4.md)
+Add tile assets and data models. Learn about assets vs. persistent data, design comprehensive tile data structures, and create JSON assets for all 72 base game tiles.
+
+### 5. [Creating a Pseudo Database](task5.md)
+Build a singleton database that manages the tile catalog and draw pile. Implement a data access object (DAO) to provide structured access to your tile collections.
