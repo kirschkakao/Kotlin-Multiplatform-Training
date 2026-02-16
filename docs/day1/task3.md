@@ -6,7 +6,7 @@ Now that you have installed Android Studio and set up the project, it's time to 
 
 1. **Open the Project**: Launch Android Studio and open the Carcassonne project you cloned in Task 2.
 
-2. **Navigate the Directory Structure**: Take time to explore and understand the project structure
+2. **Navigate the Directory Structure**: Take time to explore and understand the project structure.
 
 ### Project Structure Overview
 
@@ -17,19 +17,23 @@ Carcassonne/
 │   ├── src/
 │   │   ├── commonMain/                  # Shared code for all platforms
 │   │   │   ├── kotlin/
-│   │   │   │   ├── core/                # Core utilities and shared components
-│   │   │   │   ├── tile/                # Everything related to game tiles (Legekarten)
-│   │   │   │   ├── ui/                  # Shared UI components
-│   │   │   │   └── welcome/             # Welcome/Splash screen feature
+│   │   │   │   └── org.example.carcassonne/    
+│   │   │   │       ├── core/            # Core utilities and shared components
+│   │   │   │       ├── tile/            # Everything related to game tiles (Legekarten)
+│   │   │   │       ├── ui/              # Shared UI components
+│   │   │   │       └── welcome/         # Welcome/Splash screen feature
 │   │   │   ├── composeResources/        # Compose UI resources (drawables, colors, strings)
 │   │   │   └── resources/               # Game resources
 │   │   │       ├── CarcassonneRules.pdf # Official Carcassonne game rules
 │   │   │       └── CarcassonneTiles.jpg # Tile textures
 │   │   ├── commonTest/                  # Shared unit tests
 │   │   │   └── kotlin/
-│   │   │       └── FreeFunctionTest.kt  # Example test file
+│   │   │       └── org.example.carcassonne/
+│   │   │           └── core/            # Tests for core package
 │   │   └── desktopMain/                 # Desktop-specific code
-│   │       └── kotlin/org/              # Desktop entry points and platform-specific code
+│   │       └── kotlin/
+│   │           └── org.example.carcassonne/
+│   │               └── Main.kt          # Desktop entry point
 │   └── build/                           # Compiled output (generated, do not edit)
 ├── build.gradle.kts                     # Root build configuration
 ├── settings.gradle.kts                  # Gradle project settings
@@ -42,7 +46,7 @@ Carcassonne/
     - Review `composeApp/build.gradle.kts` to understand dependencies
     - Centralized dependency versions are managed in `gradle/libs.versions.toml`, which keeps all your library versions in one place.
     - Check `commonMain/resources/` for game rules and the tile textures - reading the rules will help you understand the game logic you're implementing.
-    - Look at existing test files in `commonTest/kotlin/`
+    - Look at existing test files in `commonTest/kotlin/` - note that tests should follow the same package structure as the main code (e.g., tests for `core` package should be in `commonTest/kotlin/org.example.carcassonne/core/`)
 
 4. **Explore the Packages**:
     - Open each package (core, tile, ui, welcome) and note what files exist
@@ -68,7 +72,7 @@ According to this architecture, the app should be divided into three main layers
 
 The **UI Layer** contains the Jetpack Compose code for the user interface—all graphical elements and user interactions.<br>
 The **Domain Layer** sits between the UI and data layers, containing the business logic and state management that updates the UI when values change.<br>
-The **Data Layer** handles all data sources like databases and APIs, providing repositories that offer clean interfaces for the domain layer to read and update data without worrying about implementation details
+The **Data Layer** handles all data sources like databases and APIs, providing repositories that offer clean interfaces for the domain layer to read and update data without worrying about implementation details.
 
 #### Vertical Slice Architecture
 
@@ -160,7 +164,7 @@ flowchart LR
 ```
 
 
-In general, the Data Layer consists of the follwing components.
+In general, the Data Layer consists of the following components.
 
 **Data models** (not shown) are simple data classes that represent the structure of your data — think of them as the shape of a database table row.<br>
 **DAOs (Data Access Objects)** handle the low-level database operations like inserting, updating, deleting, and querying data directly from the database.<br>
