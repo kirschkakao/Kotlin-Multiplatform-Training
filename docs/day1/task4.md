@@ -105,12 +105,12 @@ implementation("com.google.code.gson:gson:2.8.9")
 
 This means Gson is already available in your project. We don't need to install anything; we just need to understand how it works and structure our JSON so Gson can properly deserialize it into `Tile` objects.
 
-#### Test-driven development
+#### Test-driven familiarization
 
-Before we create the full tile asset JSON, let's use test-driven development. We'll write unit tests that verify, step by step, that we can parse Areas, then Tiles, then lists of Tiles, and finally complete tile decks from different expansions.
+Before we create the full tile asset JSON, let us familiarize ourselves with the Gson parser in a test-driven way. We'll write unit tests that verify, step by step, that we can parse Areas, then Tiles, then lists of Tiles, and finally complete tile decks from different expansions.
 
 !!! example "Task"
-    Add a `GsonTest` class to the `commonTest/kotlin` package and create a `fluffAreas.json` file in a new `commonTest/resources` folder. (You may need to create the `resources` folder if it doesn't exist.)
+    Add a `Tile` package to the `commonTest/kotlin/org.example.carcassonne/` package, add a `GsonTest` class and then create a `fluffAreas.json` file in a new `commonTest/resources` folder. (You may need to create the `resources` folder if it doesn't exist.)
 
 Look at the existing `FreeFunctionTest.kt` to understand how Kotlin unit tests are structured and named. We'll follow the same principles for our JSON parser tests.
 
