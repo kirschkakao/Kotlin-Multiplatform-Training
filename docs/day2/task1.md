@@ -1,6 +1,6 @@
 # Task 1: Get to know Jetpack Compose and Material Design
 
-In this task, we will learn what [Jetpack Compose](https://developer.android.com/compose) and Material Design 3 are and how we use them to build the frontend.
+In this task, we will learn what [Jetpack Compose](https://developer.android.com/compose) and [Material Design 3](https://m3.material.io/) are and how we use them to build the frontend.
 
 ## The Welcome screen
 
