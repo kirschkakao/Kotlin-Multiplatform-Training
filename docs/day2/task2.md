@@ -8,7 +8,6 @@ In this task, we will create a screen that lets the user select and deselect pla
 
 In the finished game, the first screen a user will see after the welcome screen is the "Select Player Screen". This screen lets users choose which players (colors) will participate in the game. In this task, we'll implement a prototype of this screen (shown above) that incorporates basic layouts and clickability, but doesn't connect to the backend yet. We'll wire up the backend in later tasks.
 
-
 ### Preparation
 
 Before we start implementing the screen, we need to set up the necessary data structures and packages. According to our vertical slice architecture, this means we first create a new package for the *player*-related code.
@@ -195,4 +194,4 @@ In the next task, we'll implement navigation so users can move between the welco
 
 ---
 
-[Previous: Task 1](task1.md) | [Next: Day 3](../day3/index.md)
+[Previous: Task 1](task1.md) | [Next: Task 3](task3.md)
