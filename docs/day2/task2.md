@@ -1,4 +1,4 @@
-# Task 2: A reactive Screen in Jetpack Compose
+# Task 2: Create a reactive Screen in Jetpack Compose
 
 In this task, we will create a screen that lets the user select and deselect players for a game.
 
@@ -14,9 +14,11 @@ In the finished game, the first screen that a user will see after the welcome sc
 Before we start implementing the screen, we need to set up the necessary data structures and packages. According to our vertical slice architecture, this means we first create a new package for the *player*-related code.
 
 !!! example "Task"
-    Create a new package `player` next to the `tile` package which includes subpackages for all three layers of the architecture (data, domain, presentation). Then add some elements similar to the tile package:
+    Create a new package `player` next to the `tile` package which includes subpackages for all three layers of the architecture (data, domain, presentation). Then add some elements similar to the `tile` package:
+    
     - Create a `PlayerColor` enum in the data layer according to the game rules.
-    - Create a `Player` data class that includes the player color, number of followers and points (initialize followers to the maximum number of followers and the points to 0). - Add a `SelectPlayerScreen.kt` file to the presentation layer and create an empty composable `SelectPlayerScreen()` that has a modifier as argument.
+    - Create a `Player` data class that includes the player color, number of followers and points (initialize followers to the maximum number of followers and the points to 0).
+    - Add a `SelectPlayerScreen.kt` file to the presentation layer and create an empty composable `SelectPlayerScreen()` that has a modifier as argument.
 
 The maximum number of followers one player can have is a global constant and will be used in multiple places, so we can add it as a top-level constant to the `core` package. Create a `Constants.kt` file on the root level of the `core` package and add the following constant:
 
