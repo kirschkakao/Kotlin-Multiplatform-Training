@@ -8,34 +8,34 @@ A navigation graph is a visual representation of the different paths a user can 
 
 - Welcome Screen
 - Player Selection Screen
-- Expansion Selection Screen
+- Deck Selection Screen
 - Game Screen
-- Result Screen
+- Results Screen
 
 One way to connect these screens is to simply navigate to the next screen in the flow after a certain user interaction. For example, a "Start" button on the Welcome screen or a "Continue" button on the two selection screens would create a navigation graph like this:
 
 ```mermaid
 flowchart TB
-    WelcomeScreen --> PlayerSelectionScreen --> ExpansionSelectionScreen --> GameScreen --> ResultScreen
+    WelcomeScreen --> PlayerSelectionScreen --> DeckSelectionScreen --> GameScreen --> ResultsScreen
 ```
 
 However, this graph doesn't let users go back to previous screens — for example, if they want to change the number of players after selecting an expansion. To allow this, we can add back navigation:
 
 ```mermaid
 flowchart TB
-    WelcomeScreen --> PlayerSelectionScreen --> ExpansionSelectionScreen --> GameScreen --> ResultScreen
+    WelcomeScreen --> PlayerSelectionScreen --> DeckSelectionScreen --> GameScreen --> ResultsScreen
     PlayerSelectionScreen --> WelcomeScreen
-    ExpansionSelectionScreen --> PlayerSelectionScreen
+    DeckSelectionScreen --> PlayerSelectionScreen
 ```
 
-Finally, we want users to be able to start a new game after seeing the results, so we add a path from the Result Screen back to the Player Selection Screen:
+Finally, we want users to be able to start a new game after seeing the results, so we add a path from the Results Screen back to the Player Selection Screen:
 
 ```mermaid
 flowchart TB
-    WelcomeScreen --> PlayerSelectionScreen --> ExpansionSelectionScreen --> GameScreen --> ResultScreen
+    WelcomeScreen --> PlayerSelectionScreen --> DeckSelectionScreen --> GameScreen --> ResultsScreen
     PlayerSelectionScreen --> WelcomeScreen
-    ExpansionSelectionScreen --> PlayerSelectionScreen
-    ResultScreen --> PlayerSelectionScreen
+    DeckSelectionScreen --> PlayerSelectionScreen
+    ResultsScreen --> PlayerSelectionScreen
 ```
 
 This is the navigation graph we'll implement in our app.
