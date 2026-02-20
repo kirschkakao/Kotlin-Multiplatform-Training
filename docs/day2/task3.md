@@ -192,7 +192,7 @@ composable(route = SelectPlayerDestination.route) {
 
 Now start the app and try navigating between the Welcome Screen and the Player Selection Screen. You should be able to move back and forth between the two screens.
 
-![Navigation](images/task3/navigation_1.png)
+![Navigation](images/task3/navigation_2.png)
 
 ## Implement the rest of the navigation graph
 
