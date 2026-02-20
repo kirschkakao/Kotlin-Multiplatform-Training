@@ -171,7 +171,7 @@ Finally, we need to register the Player Selection Screen as a destination in the
 
 Now start the app and click the "Click me!" button on the Welcome Screen. Instead of the animation, you should now see that the app navigates to the Player Selection Screen.
 
-![Navigation](../images/day2/navigation_1.png)
+![Navigation](images/task3/navigation_1.png)
 
 #### Navigate back
 
@@ -192,7 +192,7 @@ composable(route = SelectPlayerDestination.route) {
 
 Now start the app and try navigating between the Welcome Screen and the Player Selection Screen. You should be able to move back and forth between the two screens.
 
-![Navigation Back](../images/day2/navigation_2.png)
+![Navigation](images/task3/navigation_1.png)
 
 ## Implement the rest of the navigation graph
 
@@ -208,7 +208,7 @@ Now that you know how to navigate between screens, you can implement the rest of
     
     For each screen, create the `NavigationDestination` object and a composable that displays a title text (to identify the screen) and simple navigation buttons. Register all screens in the NavHost and inject the appropriate navigation actions so the buttons navigate according to the navigation graph.
 
-![Navigation Graph](../images/day2/navigation_3.png)
+![Navigation Graph](images/task3/navigation_3.png)
 
 ## Summary
 

@@ -2,7 +2,7 @@
 
 In this task, we will create a screen that lets the user select and deselect players for a game.
 
-![Select Players Prototype](../images/day2/select_player_screen_prototype.png)
+![Select Players Prototype](images/task2/select_player_screen_prototype.png)
 
 ## The Select Player Screen
 
@@ -43,7 +43,7 @@ fun SelectPlayerScreenPreview() {
 
 The screen that we want to create should look like this:
 
-![Select Player Screen](../images/day2/select_player_screen.png)
+![Select Player Screen](images/task2/select_player_screen.png)
 
 Think about what kind of layout structures you can see in this screen. How are the elements arranged?
 
@@ -71,14 +71,14 @@ fun SelectPlayerScreen(
 
 Render the preview and check that it looks something like this:
 
-![Player Color Column](../images/day2/player_color_string_column.png)
+![Player Color Column](images/task2/player_color_string_column.png)
 
 !!! example "Task"
     Replace the `Text` composable with a `Row` that contains a `Checkbox` composable and a `Row` for the option. The checkbox should be unchecked by default. Set `onCheckedChange = null` for now. The option row should contain an `Icon` composable using `Icons.Filled.Person` and a `Text` with the name of the color. Wrap the name of the enum entry in the `capitalizeFirstChar()` function from the `core.domain` package to format it nicely. 
 
 After you have completed the task, the preview should look like this:
 
-![Player Select Black and White](../images/day2/select_player_black_white.png)
+![Player Select Black and White](images/task2/select_player_black_white.png)
 
 To add the colors to the icons, we can use the `tint` parameter of the `Icon` composable. But first, we need to define a mapping from the `PlayerColor` enum to actual colors.
 
@@ -87,7 +87,7 @@ To add the colors to the icons, we can use the `tint` parameter of the `Icon` co
 
 After you have completed this task, the preview should look like this:
 
-![Player Select with color](../images/day2/select_player_with_color.png)
+![Player Select with color](images/task2/select_player_with_color.png)
 
 The last layout step is to arrange and align the elements properly. In our case, we want to match the target design shown above.
 
@@ -119,7 +119,7 @@ Spacer(modifier = Modifier.width(8.dp))
 
 You should now see something like this in the preview:
 
-![Player Select with color aligned](../images/day2/select_player_with_color_aligned.png)
+![Player Select with color aligned](images/task2/select_player_with_color_aligned.png)
 
 You'll notice there's still a slight layout difference in the spacing between the option row and the checkbox. This will change once we make the checkbox clickable, since that adds padding around it (to make it easier to click). Before we add clickability, let's simulate this by adding `Modifier.padding(12.dp)` to the checkbox and removing the verticalArrangement parameter from the Column (since the padding already adds 24dp of space—2×12dp—between the rows).
 
@@ -149,7 +149,7 @@ fun main() = application {
 
 Start the app. You should see the following:
 
-![Select Player Welcome 1](../images/day2/select_player_in_app1.png)
+![Select Player Welcome 1](images/task2/select_player_in_app1.png)
 
 Right now we can only look at it—we can't click or interact with anything yet. That's because we haven't added any click handlers or state to the screen.
 

@@ -15,23 +15,23 @@ Android Studio is the official IDE for Android development, but it's also excell
 3. **Check Out the Starting Repository**: Clone or download the project from the repository. It contains an empty KMP app for Windows with the Carcassonne logo and other required assets like the tile textures and the game rules as pdf.
 
 4. **Add run configuration**: Click on the three dots next to the bug logo in the top bar
-![three dots](../images/day1/threedots.png) and then on _Edit..._ to open the _Run/Debug configurations_. Then click on the "+"-icon to add a run configuration and choose "gradle"
+![three dots](images/task2/threedots.png) and then on _Edit..._ to open the _Run/Debug configurations_. Then click on the "+"-icon to add a run configuration and choose "gradle"
 
-![add conf](../images/day1/add_configuration.png)
+![add conf](images/task2/add_configuration.png)
 
 Then add a name for the configuration and put "composeApp:run" into the run command line
 
-![command](../images/day1/config.png)
+![command](images/task2/config.png)
 
 Click _OK_ and you should now see your new run configuration next to the play button:
-![run conf](../images/day1/new_conf.png)
+![run conf](images/task2/new_conf.png)
 
 
 5. **Run the App**: Select the desktop run configuration, and click _Run_ (green play button). The app should start and display a _JB_ programm window with a button called _Click me!_ that scrolls a _Carcassonne_ logo in and out.
 
 ### What It Should Look Like Now
-![Desktop Highlights](../images/day1/start1.png)
-![Desktop Highlights](../images/day1/start2.png)
+![Desktop Highlights](images/task2/start1.png)
+![Desktop Highlights](images/task2/start2.png)
 
 ---
 
