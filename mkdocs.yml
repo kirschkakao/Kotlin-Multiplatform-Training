@@ -55,8 +55,11 @@ nav:
     - Summary: day1/summary.md
   - 'Day 2: Navigation, Architecture Basics and UI Introduction':
     - Overview: day2/index.md
-    - 'Task 1: Navigation Graph and Architecture': day2/task1.md
-    - 'Task 2: UI Screens and Tile Display': day2/task2.md
+    - 'Task 1: Get to know Jetpack Compose and Material Design 3': day2/task1.md
+    - 'Task 2: Create a reactive Screen in Jetpack Compose': day2/task2.md
+    - 'Task 3: Navigation': day2/task3.md
+    - 'Task 4: Beautify the Screens': day2/task4.md
+    - Summary: day2/summary.md
   - 'Day 3: Grid, Game Board and State Management':
     - Overview: day3/index.md
     - 'Task 1: Reusable Grid Class': day3/task1.md
