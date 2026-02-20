@@ -1,4 +1,4 @@
-# Day 2: Navigation, Architecture Basics and UI Introduction
+# Day 2: Frontend Introduction, Navigation and UI Polish
 
 ## Overview
 Today you dive the frontend with Jetpack Compose and Material Design 3, learning how composables, themes, and previews fit together. You'll build a reactive player selection screen, then connect screens with a clean navigation graph and back navigation. To wrap up the day, you'll extract reusable UI elements and polish the layout using app bars.

@@ -45,7 +45,7 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - 'Day 1: Setup, Kotlin Basics and Tile Parser':
+  - 'Day 1: Introduction to Kotlin and Kotlin Multiplatform (KMP)':
     - Overview: day1/index.md
     - 'Task 1: Learn Kotlin Basics': day1/task1.md
     - 'Task 2: Tool Installation and Setup': day1/task2.md
@@ -53,7 +53,7 @@ nav:
     - 'Task 4: Adding Game Tile Assets': day1/task4.md
     - 'Task 5: Creating a Pseudo Database': day1/task5.md
     - Summary: day1/summary.md
-  - 'Day 2: Navigation, Architecture Basics and UI Introduction':
+  - 'Day 2: Frontend Introduction, Navigation and UI Polish':
     - Overview: day2/index.md
     - 'Task 1: Get to know Jetpack Compose and Material Design 3': day2/task1.md
     - 'Task 2: Create a reactive Screen in Jetpack Compose': day2/task2.md

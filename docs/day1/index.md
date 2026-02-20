@@ -1,4 +1,4 @@
-# Day 1: Setup, Kotlin Basics and Tile Parser
+# Day 1: Introduction to Kotlin and Kotlin Multiplatform (KMP)
 
 ## Overview
 Today you'll start your journey into Kotlin and Kotlin Multiplatform (KMP) development. We'll set up the necessary tools and dive into the fundamentals.
