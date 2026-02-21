@@ -62,12 +62,19 @@ nav:
     - Summary: day2/summary.md
   - 'Day 3: Connecting the Frontend to the Backend and Building a Tile Card':
     - Overview: day3/index.md
-    - 'Task 1: Reusable Grid Class': day3/task1.md
-    - 'Task 2: Program the Game Board': day3/task2.md
-  - 'Day 4: The Game Board':
+    - 'Task 1: ViewModels and manual Dependency Injection': day3/task1.md
+    - 'Task 2: Persist and Manage Game State': day3/task2.md
+    - 'Task 3: Building a Tile Card': day3/task3.md
+    - Summary: day3/summary.md
+  - 'Day 4: The Game Screen':
     - Overview: day4/index.md
-    - 'Task 1: Place Followers and Calculate Points': day4/task1.md
+    - 'Task 1: A reusable Grid': day4/task1.md
+    - 'Task 2: Building a Tile Grid': day4/task2.md
+    - 'Task 3: Building the Game Screen': day4/task3.md
+    - Summary: day4/summary.md
   - 'Day 5: Scoring Areas and Follower placement':
     - Overview: day5/index.md
-    - 'Task 1: Refine the App': day5/task1.md
-    - 'Task 2: Presentation and Feedback': day5/task2.md
+    - 'Task 1: Scoring Areas': day5/task1.md
+    - 'Task 2: Implement all scoring areas and their logic': day5/task2.md
+    - 'Task 3: Follower placement and scoring logic': day5/task3.md
+    - Summary: day5/summary.md

@@ -1,6 +1,4 @@
-# Task 2: Persist and Manage Game State
-
-
+# Task 2: Building a Tile Grid
 
 ---
 

@@ -37,5 +37,5 @@ In general, you can use all helping tools you like (Google, AI, etc.), but keep 
 | [1](day1/index.md) | Introduction to Kotlin and Kotlin Multiplatform (KMP) |
 | [2](day2/index.md) | Frontend Introduction, Navigation and UI Polish |
 | [3](day3/index.md) | Connecting the Frontend to the Backend and Building a Tile Card |
-| [4](day4/index.md) | The Game Board |
+| [4](day4/index.md) | The Game Screen |
 | [5](day5/index.md) | Scoring Areas and Follower placement |
