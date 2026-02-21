@@ -47,7 +47,7 @@ nav:
   - Home: index.md
   - 'Day 1: Introduction to Kotlin and Kotlin Multiplatform (KMP)':
     - Overview: day1/index.md
-    - 'Task 1: Learn Kotlin Basics': day1/task1.md
+    - 'Task 1: Kotlin Introduction': day1/task1.md
     - 'Task 2: Tool Installation and Setup': day1/task2.md
     - 'Task 3: Understand the Project Structure': day1/task3.md
     - 'Task 4: Adding Game Tile Assets': day1/task4.md
@@ -60,14 +60,14 @@ nav:
     - 'Task 3: Navigation': day2/task3.md
     - 'Task 4: Beautify the Screens': day2/task4.md
     - Summary: day2/summary.md
-  - 'Day 3: Grid, Game Board and State Management':
+  - 'Day 3: Connecting the Frontend to the Backend and Building a Tile Card':
     - Overview: day3/index.md
     - 'Task 1: Reusable Grid Class': day3/task1.md
     - 'Task 2: Program the Game Board': day3/task2.md
-  - 'Day 4: Followers, Scoring and Dependency Injection':
+  - 'Day 4: The Game Board':
     - Overview: day4/index.md
     - 'Task 1: Place Followers and Calculate Points': day4/task1.md
-  - 'Day 5: Refinement, Presentation and Feedback':
+  - 'Day 5: Scoring Areas and Follower placement':
     - Overview: day5/index.md
     - 'Task 1: Refine the App': day5/task1.md
     - 'Task 2: Presentation and Feedback': day5/task2.md

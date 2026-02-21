@@ -34,8 +34,8 @@ In general, you can use all helping tools you like (Google, AI, etc.), but keep 
 
 | Day | Content |
 |-----|---------|
-| [1](day1/index.md) | Introduction to Kotlin, Introduction to Kotlin Multiplatform (KMP) |
-| [2](day2/index.md) | Introduction to Navigation Graphs, Introduction to Manual Dependency Injection, Introduction to Jetpack Compose, Introduction to State Management with StateFlows |
-| [3](day3/index.md) | Introduction to Grids and Layouts, Deep Dive into State Management |
-| [4](day4/index.md) | Deep Dive into Manual Dependency Injection, Introduction to Game Logic and Scoring |
-| [5](day5/index.md) | Introduction to Refinement and Best Practices, Introduction to Presentations and Feedback |
+| [1](day1/index.md) | Introduction to Kotlin and Kotlin Multiplatform (KMP) |
+| [2](day2/index.md) | Frontend Introduction, Navigation and UI Polish |
+| [3](day3/index.md) | Connecting the Frontend to the Backend and Building a Tile Card |
+| [4](day4/index.md) | The Game Board |
+| [5](day5/index.md) | Scoring Areas and Follower placement |

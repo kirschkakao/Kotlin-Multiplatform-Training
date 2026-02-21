@@ -1,13 +1,7 @@
-# Day 5: Refinement, Presentation and Feedback
+# Day 5: Scoring Areas and Follower placement
 
 ### Aligning the Stand
-Everyone should have completed followers and scoring.
 
-### Introduction to Refinement and Best Practices
-Learn how to polish apps: debugging, testing, UI tweaks, and applying concepts to real projects.
-
-### Introduction to Presentations and Feedback
-Present work to share learnings and gather insights for improvement.
 
 ---
 

@@ -1,13 +1,8 @@
-# Day 3: Grid, Game Board and State Management
+# Day 3: Connecting the Frontend to the Backend and Building a Tile Card
 
 ### Aligning the Stand
-Everyone should have completed navigation, tile display, and basic UI.
 
-### Introduction to Grids and Layouts
-Learn how to create reusable grid components in Compose for game boards. Grids manage positioning and updates efficiently.
 
-### Deep Dive into State Management
-Build on Day 2: Use StateFlows for complex state (e.g., grid positions). Learn how ViewModels handle business logic and UI updates.
 
 ---
 
