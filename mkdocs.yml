@@ -45,7 +45,7 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - 'Day 1: Introduction to Kotlin and Kotlin Multiplatform (KMP)':
+  - 'Day 1: Introduction':
     - Overview: day1/index.md
     - 'Task 1: Kotlin Introduction': day1/task1.md
     - 'Task 2: Tool Installation and Setup': day1/task2.md
@@ -53,14 +53,14 @@ nav:
     - 'Task 4: Adding Game Tile Assets': day1/task4.md
     - 'Task 5: Creating a Pseudo Database': day1/task5.md
     - Summary: day1/summary.md
-  - 'Day 2: Frontend Introduction, Navigation and UI Polish':
+  - 'Day 2: Frontend':
     - Overview: day2/index.md
     - 'Task 1: Get to know Jetpack Compose and Material Design 3': day2/task1.md
     - 'Task 2: Create a reactive Screen in Jetpack Compose': day2/task2.md
     - 'Task 3: Navigation': day2/task3.md
     - 'Task 4: Beautify the Screens': day2/task4.md
     - Summary: day2/summary.md
-  - 'Day 3: Connecting the Frontend to the Backend and Building a Tile Card':
+  - 'Day 3: Backend Integration':
     - Overview: day3/index.md
     - 'Task 1: ViewModels and manual Dependency Injection': day3/task1.md
     - 'Task 2: Persist and Manage Game State': day3/task2.md
@@ -72,7 +72,7 @@ nav:
     - 'Task 2: Building a Tile Grid': day4/task2.md
     - 'Task 3: Building the Game Screen': day4/task3.md
     - Summary: day4/summary.md
-  - 'Day 5: Scoring Areas and Follower placement':
+  - 'Day 5: Scoring':
     - Overview: day5/index.md
     - 'Task 1: Scoring Areas': day5/task1.md
     - 'Task 2: Implement all scoring areas and their logic': day5/task2.md
