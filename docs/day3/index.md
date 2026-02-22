@@ -22,4 +22,4 @@ Decompose a Figma design into reusable Jetpack Compose components. Load and map 
 
 ---
 
-[Summary](summary.md) | [Next: Day 4](../day4/index.md)
+[Previous: Day 2](../day2/index.md) | [Summary](summary.md) | [Next: Day 4](../day4/index.md)

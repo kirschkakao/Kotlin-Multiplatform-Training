@@ -25,4 +25,4 @@ Extract reusable elements, add top app bars, and refine spacing and layout for a
 
 ---
 
-[Summary](summary.md) | [Next: Day 3](../day3/index.md)
+[Previous: Day 1](../day1/index.md) | [Summary](summary.md) | [Next: Day 3](../day3/index.md)

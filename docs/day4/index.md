@@ -22,4 +22,4 @@ Integrate the grid into a complete game screen with all necessary elements.
 
 ---
 
-[Summary](summary.md) | [Next: Day 5](../day5/index.md)
+[Previous: Day 3](../day3/index.md) | [Summary](summary.md) | [Next: Day 5](../day5/index.md)

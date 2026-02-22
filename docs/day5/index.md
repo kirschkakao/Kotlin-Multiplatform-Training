@@ -22,4 +22,4 @@ Implement the mechanics for placing followers and calculating scores.
 
 ---
 
-[Summary](summary.md)
+[Previous: Day 4](../day4/index.md) | [Summary](summary.md)
