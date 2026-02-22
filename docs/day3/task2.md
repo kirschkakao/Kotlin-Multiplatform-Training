@@ -405,6 +405,7 @@ To test that the selected players are actually initialized and persist across sc
 
 In this task, you connected the domain layer to the data layer by implementing repositories that act as intermediaries between ViewModels and DAOs. You learned how to use the AppContainer to manage repository dependencies and provide them to ViewModels through the AppViewModelProvider. By implementing the TileRepository and PlayerRepository, you saw how the repository pattern abstracts data access details and provides a clean API to the domain layer. Finally, you tested the complete dependency flow from UI to database, confirming that game state persists correctly across screens.
 
+In the next task, you'll learn how to implement more complex frontend elements based on a Figma design. 
 
 ---
 

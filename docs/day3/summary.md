@@ -2,7 +2,11 @@
 
 ## What You've Accomplished Today
 
-Today you connected the frontend to the backend and started building the tile card component. You implemented ViewModels and set up manual dependency injection to manage your application's state and dependencies properly. You then persisted and managed game state using StateFlows, ensuring your UI reacts correctly to state changes.
+You started by moving state and business logic out of your UI layer into ViewModels, implementing `SelectPlayerViewModel` and `SelectDecksViewModel` with `StateFlow`-based state management. You created `AppViewModelProvider` to externalize ViewModel creation and learned the difference between constructor and field dependency injection patterns.
+
+Then you connected the domain layer to the data layer by implementing `TileRepository` and `PlayerRepository`, which abstract database access through DAOs. You created `AppContainer` to provide repositories as singletons, visualizing the complete dependency flow from UI screens through ViewModels and Repositories down to the Database.
+
+Finally, you took a Figma design and decomposed it into reusable composables: `TileCell`, `CurrentPlayerBadge`, `CurrentTileHeader`, and `CurrentTileCard`. You loaded tile texture assets from `CarcassonneTiles.jpg` and mapped them to your tile instances, bringing the visual design to life with real graphics.
 
 ## What's Coming Tomorrow
 
