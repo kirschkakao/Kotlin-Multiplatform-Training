@@ -14,4 +14,4 @@ Tomorrow you'll focus on the game screen and reusable grid components. You'll im
 
 ---
 
-[Previous: Task 2](task2.md) | [Next: Day 4](../day4/index.md)
+[Previous: Task 3](task3.md) | [Next: Day 4](../day4/index.md)

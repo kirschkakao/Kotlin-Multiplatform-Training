@@ -6,6 +6,9 @@
 ## Before You Start
 Make sure you have completed all Day 3 tasks and that your project matches the expected baseline.
 
+!!! warning "Important"
+    Whenever you need to import objects from external libraries and have more than one option to choose from, prioritize `androidx.compose` and `material3` imports.
+
 ## Tasks Overview
 
 ### 1. [A reusable Grid](task1.md)
@@ -19,4 +22,4 @@ Integrate the grid into a complete game screen with all necessary elements.
 
 ---
 
-[Task 1: A reusable Grid](task1.md) | [Task 2: Building a Tile Grid](task2.md) | [Task 3: Building the Game Screen](task3.md) | [Summary](summary.md) | [Next: Day 5](../day5/index.md)
+[Summary](summary.md) | [Next: Day 5](../day5/index.md)

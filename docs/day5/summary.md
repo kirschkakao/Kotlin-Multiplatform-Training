@@ -6,4 +6,4 @@ Today you implemented the scoring areas and all associated game logic. You desig
 
 ---
 
-[Previous: Task 2](task2.md)
+[Previous: Task 3](task3.md)

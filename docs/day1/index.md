@@ -9,6 +9,9 @@ For this training, we use two IDEs:
 - **Android Studio**: For the main Carcassonne training project (KMP desktop app)
 - **IntelliJ IDEA Community Edition**: For learning Kotlin basics and running small Kotlin tests independently
 
+!!! warning "Important"
+    Whenever you need to import objects from external libraries and have more than one option to choose from, prioritize `androidx.compose` and `material3` imports.
+
 ## Tasks Overview
 
 ### 1. [Kotlin Introduction](task1.md)
@@ -25,3 +28,7 @@ Add tile assets and data models. Learn about assets vs. persistent data, design 
 
 ### 5. [Creating a Pseudo Database](task5.md)
 Build a singleton database that manages the tile catalog and draw pile. Implement a data access object (DAO) to provide structured access to your tile collections.
+
+---
+
+[Summary](summary.md) | [Next: Day 2](../day2/index.md)

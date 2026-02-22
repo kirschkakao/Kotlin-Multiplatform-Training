@@ -6,6 +6,9 @@ Today you'll connect your frontend to your backend architecture and learn how to
 ## Before You Start
 Make sure you have completed all Day 2 tasks and that your project matches the expected baseline.
 
+!!! warning "Important"
+    Whenever you need to import objects from external libraries and have more than one option to choose from, prioritize `androidx.compose` and `material3` imports.
+
 ## Tasks Overview
 
 ### 1. [ViewModels and manual Dependency Injection](task1.md)
@@ -19,4 +22,4 @@ Decompose a Figma design into reusable Jetpack Compose components. Load and map 
 
 ---
 
-[Task 1: ViewModels and manual Dependency Injection](task1.md) | [Task 2: Persist and Manage Game State](task2.md) | [Task 3: Building a Tile Card](task3.md) | [Summary](summary.md) | [Next: Day 4](../day4/index.md)
+[Summary](summary.md) | [Next: Day 4](../day4/index.md)

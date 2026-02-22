@@ -6,6 +6,9 @@ Today you dive the frontend with Jetpack Compose and Material Design 3, learning
 ## Before You Start
 Make sure you have completed all Day 1 tasks and that your project matches the expected baseline.
 
+!!! warning "Important"
+    Whenever you need to import objects from external libraries and have more than one option to choose from, prioritize `androidx.compose` and `material3` imports.
+
 ## Tasks Overview
 
 ### 1. [Get to know Jetpack Compose and Material Design 3](task1.md)
@@ -20,3 +23,6 @@ Design a navigation graph, register destinations, and wire up forward and back n
 ### 4. [Beautify the Screens](task4.md)
 Extract reusable elements, add top app bars, and refine spacing and layout for a consistent look.
 
+---
+
+[Summary](summary.md) | [Next: Day 3](../day3/index.md)
