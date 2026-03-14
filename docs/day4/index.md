@@ -11,11 +11,11 @@ Make sure you have completed all Day 3 tasks and that your project matches the e
 
 ## Tasks Overview
 
-### 1. [A reusable Grid](task1.md)
-Implement a reusable grid component for the game board.
+### 1. [The Tile Grid](task1.md)
+Implement a reusable grid component and use it to create an interactive tile grid for the game.
 
-### 2. [Building a Tile Grid](task2.md)
-Use the grid component to build an interactive tile grid for the game.
+### 2. [Rotate and place Tiles](task2.md)
+Add functionality to rotate and place tiles on the grid.
 
 ### 3. [Building the Game Screen](task3.md)
 Integrate the grid into a complete game screen with all necessary elements.
