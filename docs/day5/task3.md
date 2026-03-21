@@ -1,4 +1,4 @@
-# Task 3: Follower placement and scoring logic
+# Task 3: Scoring Areas and logic
 
 ---
 

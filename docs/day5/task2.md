@@ -1,4 +1,4 @@
-# Task 2: Implement all scoring areas and their logic
+# Task 2: Follower placement
 
 ---
 
