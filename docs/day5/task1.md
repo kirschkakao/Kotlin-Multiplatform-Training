@@ -22,7 +22,9 @@ The player information card shows the player's color, score, and the number of f
 
 !!! example "Task"
     Add two composables to the `Elements.kt` file of the player package: `PlayerInformationCard` and `PlayerInformationBar`. Use previews to test your components.
+
     The `PlayerInformationCard` should take in a `Modifier`, a `Player` object, and a boolean indicating whether it is the current player's turn. Use the already implemented `CurrentPlayerBadge` composable for all player badges (you may rename the composable to just `PlayerBadge` if you want, since its use is now more general). Use what you have learned about layout composables, modifiers, spacers, arrangement effects, etc. to implement the given design. Also check the Material Design 3 documentation for the `Card` component to see which type of card you need.
+
     The `PlayerInformationBar` should take in a `Modifier`, a list of `Player` objects, and the current player's `PlayerColor`. Use a `LazyHorizontalGrid` to display a `PlayerInformationCard` for each player in the list. Make sure to pass the correct boolean to each card to indicate whether it is the current player's turn.
 
 Now that you have implemented the player information bar and card, we need to add it to the game screen and connect it to the domain layer.
@@ -70,7 +72,9 @@ Now we have the score board composable and the view model to provide the data fo
 
 !!! example "Task"
     In the `ResultsScreen` composable, add the `ScoreBoard` to the screen and use spacers, padding, arrangement, etc. to achieve the final design shown above.
+    
     Then, use the factory to add the `ResultsViewModel` to the `ResultsScreen` and insert the `resultList` from the view model into the `ScoreBoard` to show the final scores of the game.
+
     Finally, update the header of the score board to indicate the winner of the game as shown. Remember to use string resources instead of hardcoding the text.
 
 Restart the application, select several player colors, and head to the results screen by quitting the game. Since we have not implemented any scoring yet, all players should have 0 points and the winner will be the first player in the list.
