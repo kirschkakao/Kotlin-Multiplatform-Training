@@ -11,7 +11,7 @@ Make sure you have completed all Day 4 tasks and that your project matches the e
 
 ## Tasks Overview
 
-### 1. [Complete the Game Screen](task1.md)
+### 1. [Complete the Game and Result Screens](task1.md)
 
 
 ### 2. [Follower placement](task2.md)
