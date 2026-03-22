@@ -1,4 +1,4 @@
-# Task 5: Creating a pseudo Database
+# Task 5: Creating a Pseudo Database
 
 In the last task, we created all the data structures needed to represent tiles in code and familiarized ourselves with the Gson parser before adding the data assets for all 72 base game tiles.<br>
 In this task, we'll build the pseudo database that loads the tiles and manages both the complete tile catalog and the active draw pile for the current game—and later on, player data as well. As described in task 3, a pseudo database mimics real database behavior using simple Kotlin collections.

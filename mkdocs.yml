@@ -47,7 +47,7 @@ nav:
   - Home: index.md
   - 'Day 1: Introduction':
     - Overview: day1/index.md
-    - 'Task 1: Kotlin Introduction': day1/task1.md
+    - 'Task 1: Learn Kotlin Basics': day1/task1.md
     - 'Task 2: Tool Installation and Setup': day1/task2.md
     - 'Task 3: Understand the Project Structure': day1/task3.md
     - 'Task 4: Adding Game Tile Assets': day1/task4.md
@@ -72,9 +72,9 @@ nav:
     - 'Task 2: Rotate and Place Tiles': day4/task2.md
     - 'Task 3: Building the Game Screen': day4/task3.md
     - Summary: day4/summary.md
-  - 'Day 5: Scoring':
+  - 'Day 5: Frontend Finalization and Scoring':
     - Overview: day5/index.md
     - 'Task 1: Complete the Game and Result Screens': day5/task1.md
-    - 'Task 2: Follower placement': day5/task2.md
-    - 'Task 3: Scoring Areas and logic': day5/task3.md
+    - 'Task 2: Follower Placement': day5/task2.md
+    - 'Task 3: Scoring Areas and Logic': day5/task3.md
     - Summary: day5/summary.md

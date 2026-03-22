@@ -41,7 +41,7 @@ The builder then provides complete color schemes for light and dark mode and thr
 
 #### Typography
 
-Now go back to the `MaterialTheme()` constructor in the `Theme.kt` and jump to the definition of `AppTypography` (CTRL + Click). As you can see, we just use the default definitions provided by the design kit, i.e. we do not inject anything into the `Typography()` constructor. On the Material Design 3 website, go to Styles -> Typography and then in the top menu to "Type scale & tokens". Scroll to section "M3 type scale". Then hover over the `Typography()` constructor and compare the constructor arguments with the presented type scales. As with the color scheme, the names are identical.
+Now go back to the `MaterialTheme()` constructor in the `Theme.kt` and jump to the definition of `AppTypography` (CTRL + Click). As you can see, we just use the default definitions provided by the design kit, i.e. we do not inject anything into the `Typography()` constructor. On the Material Design 3 website, go to Styles -> Typography, then select "Type scale & tokens" from the top menu. Scroll to the "M3 type scale" section. Then hover over the `Typography()` constructor and compare the constructor arguments with the presented type scales. As with the color scheme, the names are identical.
 
 #### Use styling in code
 

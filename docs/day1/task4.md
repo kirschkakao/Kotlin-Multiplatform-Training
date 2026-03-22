@@ -1,4 +1,4 @@
-# Task 4: Adding game Tile assets
+# Task 4: Adding Game Tile Assets
 Now that everything is set up, we can start building the game itself. Before we touch any code, it helps to understand how Carcassonne works and what a tile represents.
 
 !!! example "Task"
