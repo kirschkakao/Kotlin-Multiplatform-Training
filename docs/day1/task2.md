@@ -9,8 +9,8 @@ Android Studio is the official IDE for Android development, but it's also excell
 1. **Download and Install Android Studio**: Go to the [Android Studio download page](https://developer.android.com/studio/archive), and download the latest Narwhal version for Windows (Android Studio Narwhal 4 Feature Drop | 2025.1.4, October 9, 2025). Note that there are more recent versions available, such as the _Otter_ versions, but unfortunately they are a bit unstable with regard to KMP development.
 
 2. **Install Required Plugins**: After installation,
-   - Open Android Studio and go to **File > Settings > Plugins**.
-   - Search for and install the **Compose Multiplatform** plugin (enables frontend element previews).
+     - Open Android Studio and go to **File > Settings > Plugins**.
+     - Search for and install the **Compose Multiplatform** plugin (enables frontend element previews).
 
 3. **Check Out the Starting Repository**: Clone or download the project from the repository. It contains an empty KMP app for Windows with the Carcassonne logo and other required assets, like the tile textures and the game rules as a PDF.
 
